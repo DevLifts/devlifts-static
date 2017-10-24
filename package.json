@@ -1,7 +1,7 @@
 {
-  "name": "static-template",
+  "name": "devlifts-static",
   "version": "1.0.0",
-  "description": "Description goes here",
+  "description": "Static frontend for DevLifts",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
