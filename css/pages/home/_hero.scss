@@ -1,0 +1,41 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $primaryGreen;
+  background-image: url('images/dist/running.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 95% -50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .hero-content {
+    max-width: $maxContentWidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 35px;
+    color: #fff;
+
+    h1.title {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+  }
+}

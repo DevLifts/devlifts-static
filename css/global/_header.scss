@@ -1,0 +1,111 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+
+  .header-content {
+    max-width: $maxContentWidth;
+    height: 100px;
+
+    .logo {
+      z-index: 11;
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+      color: #fff;
+      float: left;
+    }
+
+    .menu-icon {
+      z-index: 11;
+      position: absolute;
+      top: 40%;
+      right: 25px;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+
+      span {
+        position: absolute;
+        left:0;
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+      }
+
+      span:nth-child(1) {
+        top: 0px;
+      }
+
+      span:nth-child(2) {
+        top: 5px;
+      }
+
+      &.open {
+        span:nth-child(1) {
+          top: 5px;
+          transform: rotate(180deg);
+          opacity: 0;
+        }
+
+        span:nth-child(2) {
+          left: -60px;
+          opacity: 0;
+        }
+      }
+    }
+
+    .nav-container {
+      z-index: 10;
+      position: absolute;
+      top: -100vh;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      background-color: $primaryGreen;
+      transition: top 0.40s ease;
+      font-size: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+        nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+
+            li {
+              padding-top: 10px;
+              color: #fff;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              font-weight: bold;
+            }
+          }
+
+          .cta-btn {
+            margin-top: 50px;
+          }
+        }
+
+      &.open {
+        top: 0;
+      }
+    }
+  }
+}

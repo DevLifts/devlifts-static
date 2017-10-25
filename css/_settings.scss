@@ -9,12 +9,16 @@ Examples of global settings might be things like the base font size, colour pale
 */
 
 // Global Colors
+$primaryGreen: #1BBC9B;
 
 // Base Font Size
 $base_font_size: 16px;
 
 // Body Background Color
 $site_bg_color: white;
+
+// Content Width
+$maxContentWidth: 1960px;
 
 // Media Breakpoints
 $tablet: 768px;

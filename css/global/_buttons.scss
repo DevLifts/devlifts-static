@@ -1,0 +1,13 @@
+.cta-btn {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+
+  a {
+    color: $primaryGreen;
+
+    &:visited {
+      color: $primaryGreen;
+    }
+  }
+}

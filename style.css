@@ -461,6 +461,170 @@ The Components layer is where we begin to style recognisable pieces of UI. We're
 
 We shouldn't find any selectors with a lower specificity than one class in this layer. This is where the majority of your work will happen after initial project set-up. Adding new components and features usually makes up the vast majority of development.
 */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent; }
+  header .header-content {
+    max-width: 1960px;
+    height: 100px; }
+    header .header-content .logo {
+      z-index: 11;
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      color: #fff;
+      float: left; }
+    header .header-content .menu-icon {
+      z-index: 11;
+      position: absolute;
+      top: 40%;
+      right: 25px;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+      header .header-content .menu-icon span {
+        position: absolute;
+        left: 0;
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        transition: .25s ease-in-out; }
+      header .header-content .menu-icon span:nth-child(1) {
+        top: 0px; }
+      header .header-content .menu-icon span:nth-child(2) {
+        top: 5px; }
+      header .header-content .menu-icon.open span:nth-child(1) {
+        top: 5px;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+        opacity: 0; }
+      header .header-content .menu-icon.open span:nth-child(2) {
+        left: -60px;
+        opacity: 0; }
+    header .header-content .nav-container {
+      z-index: 10;
+      position: absolute;
+      top: -100vh;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      background-color: #1BBC9B;
+      -webkit-transition: top 0.40s ease;
+      transition: top 0.40s ease;
+      font-size: 1.25rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      header .header-content .nav-container nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        header .header-content .nav-container nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          text-align: center; }
+          header .header-content .nav-container nav ul li {
+            padding-top: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold; }
+        header .header-content .nav-container nav .cta-btn {
+          margin-top: 50px; }
+      header .header-content .nav-container.open {
+        top: 0; }
+
+.cta-btn {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px; }
+  .cta-btn a {
+    color: #1BBC9B; }
+    .cta-btn a:visited {
+      color: #1BBC9B; }
+
+.hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1BBC9B;
+  background-image: url("images/dist/running.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 95% -50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .hero .hero-content {
+    max-width: 1960px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto 35px;
+    color: #fff; }
+    .hero .hero-content h1.title {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .hero .hero-content .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-bottom: 50px; }
+
 /*
 07. Trumps
 
