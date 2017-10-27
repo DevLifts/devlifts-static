@@ -22,6 +22,20 @@ If you are using a preprocessor, start here. This holds any global settings for 
 Examples of global settings might be things like the base font size, colour palettes, config (for example, $environment: dev;) and so on.
 
 */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima-nova-regular.otf"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima-nova-bold.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima-nova-semibold.otf");
+  font-weight: 600; }
+
 /*
 
 02. Tools
@@ -443,7 +457,7 @@ These are bare, unclassed HTML elements. What does an h1 look like without a cla
 The Elements layer is typically the last one in which we'd find bare, element-based selectors, and is very rarely added to or changed after initial setup. Once we have defined element-level styles, all additions and deviations should be implemented using classes.
 */
 html {
-  font-family: san-serif;
+  font-family: "Proxima Nova", san-serif;
   font-size: 16px; }
 
 body {
@@ -474,18 +488,21 @@ header {
     header .header-content .logo {
       z-index: 11;
       position: absolute;
-      top: 50%;
+      top: 55px;
       left: 25px;
+      width: 65px;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       color: #fff;
       float: left; }
+      header .header-content .logo img {
+        width: 100%; }
     header .header-content .menu-icon {
       z-index: 11;
       position: absolute;
-      top: 40%;
+      top: 35px;
       right: 25px;
-      width: 15px;
+      width: 20px;
       height: 15px;
       cursor: pointer;
       -webkit-transform: rotate(0deg);
@@ -496,7 +513,7 @@ header {
         position: absolute;
         left: 0;
         display: block;
-        height: 3px;
+        height: 2px;
         width: 100%;
         background: #fff;
         -webkit-transform: rotate(0deg);
@@ -506,9 +523,9 @@ header {
       header .header-content .menu-icon span:nth-child(1) {
         top: 0px; }
       header .header-content .menu-icon span:nth-child(2) {
-        top: 5px; }
+        top: 6px; }
       header .header-content .menu-icon.open span:nth-child(1) {
-        top: 5px;
+        top: 6px;
         -webkit-transform: rotate(180deg);
                 transform: rotate(180deg);
         opacity: 0; }
@@ -585,11 +602,7 @@ header {
   background-image: url("images/dist/running.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 95% -50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; }
+  background-position: top center; }
   .hero .hero-content {
     max-width: 1960px;
     display: -webkit-box;
@@ -605,12 +618,25 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: auto 35px;
+    margin: auto 25px;
     color: #fff; }
     .hero .hero-content h1.title {
       font-size: 1.125rem;
       text-transform: uppercase;
-      letter-spacing: 2px; }
+      letter-spacing: 2.25px;
+      font-weight: 600;
+      max-width: 600px;
+      margin: 25px auto; }
+    .hero .hero-content .line {
+      height: 2px;
+      width: 35px;
+      background-color: #fff; }
+    .hero .hero-content .intro {
+      font-weight: 400;
+      line-height: 1.4;
+      text-align: center;
+      max-width: 600px;
+      margin: 20px auto; }
     .hero .hero-content .scroll-down {
       position: absolute;
       bottom: 0;

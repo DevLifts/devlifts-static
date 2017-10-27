@@ -13,19 +13,24 @@ header {
     .logo {
       z-index: 11;
       position: absolute;
-      top: 50%;
+      top: 55px;
       left: 25px;
+      width: 65px;
       transform: translateY(-50%);
       color: #fff;
       float: left;
+
+      img {
+        width: 100%;
+      }
     }
 
     .menu-icon {
       z-index: 11;
       position: absolute;
-      top: 40%;
+      top: 35px;
       right: 25px;
-      width: 15px;
+      width: 20px;
       height: 15px;
       cursor: pointer;
       transform: rotate(0deg);
@@ -35,7 +40,7 @@ header {
         position: absolute;
         left:0;
         display: block;
-        height: 3px;
+        height: 2px;
         width: 100%;
         background: #fff;
         transform: rotate(0deg);
@@ -47,12 +52,12 @@ header {
       }
 
       span:nth-child(2) {
-        top: 5px;
+        top: 6px;
       }
 
       &.open {
         span:nth-child(1) {
-          top: 5px;
+          top: 6px;
           transform: rotate(180deg);
           opacity: 0;
         }

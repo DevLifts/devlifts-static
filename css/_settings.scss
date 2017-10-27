@@ -23,3 +23,21 @@ $maxContentWidth: 1960px;
 // Media Breakpoints
 $tablet: 768px;
 $desktop: 1024px;
+
+// Global Fonts
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima-nova-regular.otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima-nova-bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima-nova-semibold.otf");
+  font-weight: 600;
+}
