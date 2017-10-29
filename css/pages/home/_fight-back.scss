@@ -1,0 +1,71 @@
+.fight-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .fight-back-content {
+    max-width: $maxContentWidth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-banner {
+      
+      img {
+        width: 100vw;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+    }
+
+    .line-green {
+      height: 2px;
+      width: 35px;
+      background-color: $primaryGreen;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    
+    p {
+      color: #636363;
+      font-size: 1.125rem;
+      line-height: 1.6;
+      text-align: center;
+      padding: 0 25px;
+    }
+
+    .symptoms {
+      display: flex;
+      flex-direction: row;
+      height: 120vh;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .symptom {
+        width: 40vw;
+        padding: 0 5vw;
+
+        .symptom-description {
+          padding: 0;
+          margin: 0;
+          text-align: left;
+          color: #272727;
+          line-height: 1.2;
+        }
+      }
+
+      .line-grey {
+        height: 1px;
+        width: 65vw;
+        background-color: #979797;
+        opacity: .2;
+      }
+    }
+  }
+}
