@@ -10,5 +10,6 @@ We shouldn't find any selectors with a lower specificity than one class in this 
 @import 'global/header';
 @import 'global/buttons';
 
-// Import home hero
+// Import home components
 @import 'pages/home/hero';
+@import 'pages/home/why';

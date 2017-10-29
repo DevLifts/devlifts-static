@@ -651,6 +651,75 @@ header {
               justify-content: center;
       padding-bottom: 50px; }
 
+.why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px; }
+  .why h3 {
+    text-transform: uppercase;
+    font-size: 0.875rem; }
+  .why .line-green {
+    height: 2px;
+    width: 35px;
+    background-color: #1BBC9B; }
+  .why .quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .why .quote .quote-icon {
+      margin: 25px auto; }
+    .why .quote p {
+      color: #636363;
+      font-size: 1.125rem;
+      line-height: 1.6;
+      text-align: center; }
+    .why .quote .quoted {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .why .quote .quoted .quoted-name {
+        font-size: 0.6875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+        color: #000;
+        letter-spacing: 1.5px; }
+      .why .quote .quoted .quoted-position {
+        font-size: 0.5625rem;
+        font-weight: 400;
+        color: #636363;
+        text-transform: uppercase;
+        letter-spacing: 1.5px; }
+  .why .primary-cta-btn {
+    background-color: #1BBC9B; }
+    .why .primary-cta-btn a {
+      color: #fff; }
+
 /*
 07. Trumps
 

@@ -1,0 +1,66 @@
+.why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+
+  .line-green {
+    height: 2px;
+    width: 35px;
+    background-color: $primaryGreen;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .quote-icon {
+      margin: 25px auto;
+    }
+
+    p {
+      color: #636363;
+      font-size: 1.125rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .quoted {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .quoted-name {
+        font-size: 0.6875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+        color: #000;
+        letter-spacing: 1.5px;
+      }
+
+      .quoted-position {
+        font-size: 0.5625rem;
+        font-weight: 400;
+        color: #636363;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+
+  .primary-cta-btn {
+    background-color: $primaryGreen;
+    
+    a {
+      color: #fff;
+    }
+  }
+}
