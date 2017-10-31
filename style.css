@@ -791,6 +791,68 @@ header {
         background-color: #979797;
         opacity: .2; }
 
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .join .section-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("images/dist/developer-at-work.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    height: 100vh;
+    padding: 35px;
+    padding-bottom: 90px; }
+    .join .section-banner:before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%; }
+    .join .section-banner h3 {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      z-index: 1; }
+    .join .section-banner .line-green {
+      height: 2px;
+      width: 35px;
+      background-color: #1BBC9B;
+      z-index: 1; }
+    .join .section-banner h2 {
+      color: #fff;
+      z-index: 1; }
+    .join .section-banner p {
+      font-size: 1.125rem;
+      color: #fff;
+      z-index: 1;
+      line-height: 1.8; }
+
 /*
 07. Trumps
 

@@ -1,0 +1,58 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .section-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/dist/developer-at-work.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    height: 100vh;
+    padding: 35px;
+    padding-bottom: 90px;
+
+   &:before {
+      content: '';
+      background-color: rgba(0,0,0,.75);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      z-index: 1;
+    }
+  
+    .line-green {
+      height: 2px;
+      width: 35px;
+      background-color: $primaryGreen;
+      z-index: 1;
+    }
+
+    h2 {
+      color: #fff;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #fff;
+      z-index: 1;
+      line-height: 1.8;
+    }
+  }
+}
