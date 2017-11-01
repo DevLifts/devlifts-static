@@ -548,15 +548,20 @@ header {
       header .header-content .menu-icon span:nth-child(1) {
         top: 0px; }
       header .header-content .menu-icon span:nth-child(2) {
-        top: 6px; }
+        top: 5px; }
+      header .header-content .menu-icon span:nth-child(3) {
+        top: 10px; }
       header .header-content .menu-icon.open span:nth-child(1) {
-        top: 6px;
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-        opacity: 0; }
+        top: 5px;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg); }
       header .header-content .menu-icon.open span:nth-child(2) {
         left: -60px;
         opacity: 0; }
+      header .header-content .menu-icon.open span:nth-child(3) {
+        top: 5px;
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg); }
     header .header-content .nav-container {
       z-index: 10;
       position: absolute;
@@ -636,7 +641,8 @@ header {
   height: 100vh;
   background-image: url("images/dist/running.jpg");
   background-repeat: no-repeat;
-  background-position: right 5% top 15%; }
+  background-position: right 5% top 15%;
+  background-size: cover; }
   .hero:before {
     content: '';
     position: absolute;
@@ -662,7 +668,8 @@ header {
         -ms-flex-align: center;
             align-items: center;
     max-width: 1960px;
-    margin: 125px 25px;
+    height: 100%;
+    margin: 125px 3vw;
     color: #fff; }
     .hero .hero-content h1.title {
       max-width: 600px;
@@ -671,15 +678,26 @@ header {
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 2.25px; }
+      @media screen and (min-width: 768px) {
+        .hero .hero-content h1.title {
+          font-size: 2.1875rem; } }
     .hero .hero-content .line {
       height: 2px;
       width: 35px;
+      padding: 1px;
       background-color: #fff; }
+      @media screen and (min-width: 768px) {
+        .hero .hero-content .line {
+          width: 45px; } }
     .hero .hero-content .intro {
       max-width: 600px;
       margin: 20px auto;
+      font-size: 1rem;
       text-align: center;
       color: #fff; }
+      @media screen and (min-width: 768px) {
+        .hero .hero-content .intro {
+          line-height: 1.7; } }
     .hero .hero-content .cta-btn {
       margin-top: 15px; }
     .hero .hero-content .scroll-down {

@@ -5,6 +5,7 @@
   background-image: url('images/dist/running.jpg');
   background-repeat: no-repeat;
   background-position: right 5% top 15%;
+  background-size: cover;
 
   // TODO: Swap background image
 
@@ -26,7 +27,8 @@
     justify-content: center;
     align-items: center;
     max-width: $maxContentWidth;
-    margin: 125px 25px;
+    height: 100%;
+    margin: 125px 3vw;
     color: #fff;
 
     h1.title {
@@ -36,19 +38,33 @@
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 2.25px;
+
+      @include breakpoint(tablet) {
+        font-size: 2.1875rem;
+      }
     }
 
     .line {
       height: 2px;
       width: 35px;
+      padding: 1px;
       background-color: #fff;
+
+      @include breakpoint(tablet) {
+        width: 45px;
+      }
     }
 
     .intro {
       max-width: 600px;
       margin: 20px auto;
+      font-size: 1rem;
       text-align: center;
       color: #fff;
+
+      @include breakpoint(tablet) {
+        line-height: 1.7;
+      }
     }
 
     .cta-btn {

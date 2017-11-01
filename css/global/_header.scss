@@ -35,7 +35,7 @@ header {
       cursor: pointer;
       transform: rotate(0deg);
       transition: .5s ease-in-out;
-
+    
       span {
         position: absolute;
         left:0;
@@ -46,25 +46,33 @@ header {
         transform: rotate(0deg);
         transition: .25s ease-in-out;
       }
-
+    
       span:nth-child(1) {
         top: 0px;
       }
-
+    
       span:nth-child(2) {
-        top: 6px;
+        top: 5px;
       }
-
+    
+      span:nth-child(3) {
+        top: 10px;
+      }
+    
       &.open {
         span:nth-child(1) {
-          top: 6px;
-          transform: rotate(180deg);
-          opacity: 0;
+          top: 5px;
+          transform: rotate(135deg);
         }
-
+    
         span:nth-child(2) {
           left: -60px;
           opacity: 0;
+        }
+    
+        span:nth-child(3) {
+          top: 5px;
+          transform: rotate(-135deg);
         }
       }
     }
