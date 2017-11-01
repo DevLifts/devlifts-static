@@ -1,13 +1,33 @@
+// Styles for Primary & Secondary CTA Buttons
 .cta-btn {
-  background-color: #fff;
-  padding: 15px 30px;
-  border-radius: 4px;
+  background-color: $primaryGreen;
+  border-radius: 2px;
+  padding: 12px 0;
+
+  &:hover {
+    background-color: #fff;
+  }
 
   a {
     color: $primaryGreen;
+    padding: 15px 30px;
+    font-size: 0.8125rem;
+    font-weight: 600;
 
     &:visited {
       color: $primaryGreen;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &.white {
+    background-color: #fff;
+
+    &:hover {
+      background-color: $primaryGreen;
     }
   }
 }

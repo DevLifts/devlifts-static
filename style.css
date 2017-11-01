@@ -458,12 +458,37 @@ The Elements layer is typically the last one in which we'd find bare, element-ba
 */
 html {
   font-family: "Proxima Nova", san-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #272727; }
 
 body {
   background-color: white; }
 
 /* Base Headline Styles */
+h1 {
+  font-weight: 700;
+  font-size: 2.8125rem; }
+
+h2 {
+  font-weight: 700;
+  font-size: 1.875rem; }
+
+h3 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase; }
+
+h4 {
+  font-weight: 400;
+  font-size: 1.25rem; }
+
+/* Base Paragraph Styles */
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #636363;
+  line-height: 1.2; }
+
 /* Base Link Styles */
 a {
   text-decoration: none; }
@@ -581,16 +606,26 @@ header {
         top: 0; }
 
 .cta-btn {
-  background-color: #fff;
-  padding: 15px 30px;
-  border-radius: 4px; }
+  background-color: #1BBC9B;
+  border-radius: 2px;
+  padding: 12px 0; }
+  .cta-btn:hover {
+    background-color: #fff; }
   .cta-btn a {
-    color: #1BBC9B; }
+    color: #1BBC9B;
+    padding: 15px 30px;
+    font-size: 0.8125rem;
+    font-weight: 600; }
     .cta-btn a:visited {
       color: #1BBC9B; }
+    .cta-btn a:hover {
+      color: #fff; }
+  .cta-btn.white {
+    background-color: #fff; }
+    .cta-btn.white:hover {
+      background-color: #1BBC9B; }
 
 .hero {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,13 +633,21 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #1BBC9B;
-  background-image: url("images/dist/running.png");
+  height: 100vh;
+  background-image: url("images/dist/running.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center; }
+  background-position: right 5% top 15%; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1BBC9B;
+    opacity: .6; }
   .hero .hero-content {
-    max-width: 1960px;
+    z-index: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -618,240 +661,40 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: auto 25px;
+    max-width: 1960px;
+    margin: 125px 25px;
     color: #fff; }
     .hero .hero-content h1.title {
-      font-size: 1.125rem;
-      text-transform: uppercase;
-      letter-spacing: 2.25px;
-      font-weight: 600;
       max-width: 600px;
-      margin: 25px auto; }
+      margin: 25px auto;
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2.25px; }
     .hero .hero-content .line {
       height: 2px;
       width: 35px;
       background-color: #fff; }
     .hero .hero-content .intro {
-      font-weight: 400;
-      line-height: 1.4;
-      text-align: center;
       max-width: 600px;
-      margin: 20px auto; }
+      margin: 20px auto;
+      text-align: center;
+      color: #fff; }
+    .hero .hero-content .cta-btn {
+      margin-top: 15px; }
     .hero .hero-content .scroll-down {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding-bottom: 50px; }
-
-.why {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 35px; }
-  .why h3 {
-    text-transform: uppercase;
-    font-size: 0.875rem; }
-  .why .line-green {
-    height: 2px;
-    width: 35px;
-    background-color: #1BBC9B; }
-  .why .quote {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .why .quote .quote-icon {
-      margin: 25px auto; }
-    .why .quote p {
-      color: #636363;
-      font-size: 1.125rem;
-      line-height: 1.6;
-      text-align: center; }
-    .why .quote .quoted {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .why .quote .quoted .quoted-name {
-        font-size: 0.6875rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin: 0;
-        color: #272727;
-        letter-spacing: 1.5px; }
-      .why .quote .quoted .quoted-position {
-        font-size: 0.5625rem;
-        font-weight: 400;
-        color: #636363;
-        text-transform: uppercase;
-        letter-spacing: 1.5px; }
-  .why .primary-cta-btn {
-    background-color: #1BBC9B; }
-    .why .primary-cta-btn a {
-      color: #fff; }
-
-.fight-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .fight-back .fight-back-content {
-    max-width: 1960px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .fight-back .fight-back-content .section-banner img {
-      width: 100vw; }
-    .fight-back .fight-back-content h3 {
-      text-transform: uppercase;
-      font-size: 0.875rem; }
-    .fight-back .fight-back-content .line-green {
-      height: 2px;
-      width: 35px;
-      background-color: #1BBC9B; }
-    .fight-back .fight-back-content h2 {
-      text-align: center; }
-    .fight-back .fight-back-content p {
-      color: #636363;
-      font-size: 1.125rem;
-      line-height: 1.6;
-      text-align: center;
-      padding: 0 25px; }
-    .fight-back .fight-back-content .symptoms {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      height: 120vh;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
-      .fight-back .fight-back-content .symptoms .symptom {
-        width: 40vw;
-        padding: 0 5vw; }
-        .fight-back .fight-back-content .symptoms .symptom .symptom-description {
-          padding: 0;
-          margin: 0;
-          text-align: left;
-          color: #272727;
-          line-height: 1.2; }
-      .fight-back .fight-back-content .symptoms .line-grey {
-        height: 1px;
-        width: 65vw;
-        background-color: #979797;
-        opacity: .2; }
-
-.join {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .join .section-banner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-image: url("images/dist/developer-at-work.jpg");
-    background-repeat: no-repeat;
-    position: relative;
-    color: #fff;
-    height: 100vh;
-    padding: 35px;
-    padding-bottom: 90px; }
-    .join .section-banner:before {
-      content: '';
-      background-color: rgba(0, 0, 0, 0.75);
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
       width: 100%;
-      height: 100%; }
-    .join .section-banner h3 {
-      text-transform: uppercase;
-      font-size: 0.875rem;
-      letter-spacing: 2.5px;
-      font-weight: 700;
-      z-index: 1; }
-    .join .section-banner .line-green {
-      height: 2px;
-      width: 35px;
-      background-color: #1BBC9B;
-      z-index: 1; }
-    .join .section-banner h2 {
-      color: #fff;
-      z-index: 1; }
-    .join .section-banner p {
-      font-size: 1.125rem;
-      color: #fff;
-      z-index: 1;
-      line-height: 1.8; }
+      padding-bottom: 50px; }
 
 /*
 07. Trumps
