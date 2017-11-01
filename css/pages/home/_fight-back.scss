@@ -1,0 +1,60 @@
+.fight-back {
+  display: flex;
+  flex-direction: column;
+  
+  .section-banner {
+    width: 100vw;
+  }
+
+  .fight-back-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $maxContentWidth;
+    margin: 5vh 6vw 10vh 6vw;
+
+    hr {
+      background-color: $primaryGreen;
+      border: none;
+      width: 40px;
+      padding: 1px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .symptoms {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .symptom {
+        width: 45%;
+
+        .symptom-description {
+          margin: 0;
+          text-align: left;
+          font-size: 1rem;
+          color: $black;
+          line-height: 1.3;
+        }
+
+        &:nth-of-type(even) {
+          margin-left: 10px;
+        }
+      }
+
+      hr {
+        background-color: $grey;
+        opacity: .1;
+        border: none;
+        width: 60vw;
+        padding: 1px;
+        margin: 20px auto;
+      }
+    }
+  }
+}
