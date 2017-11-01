@@ -1,0 +1,7 @@
+// Small green line underneath section h3 headings
+hr {
+  background-color: $primaryGreen;
+  border: none;
+  width: 40px;
+  padding: 1px;
+}

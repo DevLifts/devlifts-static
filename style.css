@@ -691,6 +691,12 @@ header {
       .cta-btn.white:hover a:hover {
         color: #fff; }
 
+hr {
+  background-color: #1BBC9B;
+  border: none;
+  width: 40px;
+  padding: 1px; }
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,11 +818,6 @@ header {
     @media screen and (min-width: 768px) {
       .why .why-content {
         padding: 0 15vw; } }
-    .why .why-content hr {
-      background-color: #1BBC9B;
-      border: none;
-      width: 40px;
-      padding: 1px; }
     .why .why-content .testimonial {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -885,11 +886,6 @@ header {
             align-items: center;
     max-width: 1960px;
     margin: 5vh 6vw 10vh 6vw; }
-    .fight-back .fight-back-content hr {
-      background-color: #1BBC9B;
-      border: none;
-      width: 40px;
-      padding: 1px; }
     .fight-back .fight-back-content p {
       text-align: center; }
       @media screen and (min-width: 768px) {
@@ -944,6 +940,105 @@ header {
         @media screen and (min-width: 768px) {
           .fight-back .fight-back-content .symptoms hr {
             display: none; } }
+
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .join .section-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("images/dist/developer-at-work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right 65%;
+    padding: 5vh 6vw 90px 6vw;
+    position: relative; }
+    @media screen and (min-width: 1024px) {
+      .join .section-hero {
+        padding: 5vh 6vw 15% 6vw; } }
+    .join .section-hero:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75); }
+    .join .section-hero > * {
+      z-index: 1;
+      color: #fff; }
+    .join .section-hero p {
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .join .section-hero p {
+          padding: 0 15vw; } }
+  .join .join-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1960px;
+    margin: 0 6vw 10vh 6vw; }
+    .join .join-content .image-roll {
+      z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      max-width: 75%;
+      margin: -75px auto 75px auto;
+      -webkit-box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 1024px) {
+        .join .join-content .image-roll {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          margin: -10% auto 10% auto; } }
+      .join .join-content .image-roll img {
+        width: 100%; }
+    .join .join-content p {
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .join .join-content p {
+          padding: 0 15vw; } }
 
 /*
 07. Trumps

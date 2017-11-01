@@ -1,0 +1,83 @@
+.join {
+  display: flex;
+  flex-direction: column;
+
+  .section-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/dist/developer-at-work.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right 65%;
+    padding: 5vh 6vw 90px 6vw;
+    position: relative;
+
+    @include breakpoint(desktop) {
+      padding: 5vh 6vw 15% 6vw;
+    }
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,.75);
+    }
+
+    & > * {
+      z-index: 1;
+      color: #fff;
+    }
+    
+    p {
+      text-align: center;
+
+      @include breakpoint(tablet) {
+        padding: 0 15vw;
+      }
+    }
+  }
+
+  .join-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $maxContentWidth;
+    margin: 0 6vw 10vh 6vw;
+
+    .image-roll {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 75%;
+      margin: -75px auto 75px auto;
+      box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.2);
+
+      @include breakpoint(desktop) {
+        flex-direction: row;
+        margin: -10% auto 10% auto;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      text-align: center;
+
+      @include breakpoint(tablet) {
+        padding: 0 15vw;
+      }
+    }
+  }
+}
