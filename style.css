@@ -892,6 +892,9 @@ header {
       padding: 1px; }
     .fight-back .fight-back-content p {
       text-align: center; }
+      @media screen and (min-width: 768px) {
+        .fight-back .fight-back-content p {
+          padding: 0 15vw; } }
     .fight-back .fight-back-content .symptoms {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -901,19 +904,36 @@ header {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      margin-top: 25px; }
       .fight-back .fight-back-content .symptoms .symptom {
-        width: 45%; }
+        width: 40%; }
+        @media screen and (min-width: 768px) {
+          .fight-back .fight-back-content .symptoms .symptom {
+            width: 33%;
+            padding: 5%;
+            margin-bottom: 5%; }
+            .fight-back .fight-back-content .symptoms .symptom:nth-of-type(2), .fight-back .fight-back-content .symptoms .symptom:nth-of-type(5) {
+              border-left: 1px rgba(151, 151, 151, 0.2) solid;
+              border-right: 1px rgba(151, 151, 151, 0.2) solid; } }
+    @media screen and (min-width: 768px) and (min-width: 1024px) {
+      .fight-back .fight-back-content .symptoms .symptom:nth-of-type(2), .fight-back .fight-back-content .symptoms .symptom:nth-of-type(5) {
+        border: none; } }
+        @media screen and (min-width: 1024px) {
+          .fight-back .fight-back-content .symptoms .symptom {
+            width: 25%;
+            margin-bottom: 2%; }
+            .fight-back .fight-back-content .symptoms .symptom:nth-of-type(1), .fight-back .fight-back-content .symptoms .symptom:nth-of-type(2), .fight-back .fight-back-content .symptoms .symptom:nth-of-type(3), .fight-back .fight-back-content .symptoms .symptom:nth-of-type(5), .fight-back .fight-back-content .symptoms .symptom:nth-of-type(6) {
+              border-right: 1px rgba(151, 151, 151, 0.2) solid; } }
         .fight-back .fight-back-content .symptoms .symptom .symptom-description {
           margin: 0;
+          padding: 0;
           text-align: left;
           font-size: 1rem;
           color: #272727;
           line-height: 1.3; }
-        .fight-back .fight-back-content .symptoms .symptom:nth-of-type(even) {
-          margin-left: 10px; }
       .fight-back .fight-back-content .symptoms hr {
         background-color: #636363;
         opacity: .1;
@@ -921,6 +941,9 @@ header {
         width: 60vw;
         padding: 1px;
         margin: 20px auto; }
+        @media screen and (min-width: 768px) {
+          .fight-back .fight-back-content .symptoms hr {
+            display: none; } }
 
 /*
 07. Trumps
