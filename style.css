@@ -587,6 +587,9 @@ header {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      @media screen and (min-width: 1024px) {
+        header .header-content .nav-container {
+          display: none; } }
       header .header-content .nav-container nav {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -604,11 +607,22 @@ header {
           margin: 0;
           text-align: center; }
           header .header-content .nav-container nav ul li {
-            padding-top: 10px;
+            padding: 15px 90vw;
             color: #fff;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: bold; }
+            header .header-content .nav-container nav ul li:hover {
+              background-color: #fff; }
+            header .header-content .nav-container nav ul li a {
+              color: #fff;
+              padding: 15px 90vw; }
+              header .header-content .nav-container nav ul li a:hover {
+                color: #1BBC9B; }
+                header .header-content .nav-container nav ul li a:hover:visited {
+                  color: #1BBC9B; }
+              header .header-content .nav-container nav ul li a:visited {
+                color: #fff; }
         header .header-content .nav-container nav .cta-btn {
           margin-top: 50px; }
       header .header-content .nav-container.open {

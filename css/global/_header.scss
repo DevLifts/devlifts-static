@@ -98,6 +98,10 @@ header {
       flex-direction: column;
       justify-content: center;
 
+        @include breakpoint(desktop) {
+          display: none;
+        }
+
         nav {
           display: flex;
           flex-direction: column;
@@ -110,11 +114,32 @@ header {
             text-align: center;
 
             li {
-              padding-top: 10px;
+              padding: 15px 90vw;
               color: #fff;
               text-transform: uppercase;
               letter-spacing: 2px;
               font-weight: bold;
+
+              &:hover {
+                background-color: #fff;
+              }
+
+              a {
+                color: #fff;
+                padding: 15px 90vw;
+
+                &:hover {
+                  color: $primaryGreen;
+
+                  &:visited {
+                    color: $primaryGreen;
+                  }
+                }
+
+                &:visited {
+                  color: #fff;
+                }
+              }
             }
           }
 
