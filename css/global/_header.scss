@@ -115,10 +115,6 @@ header {
               text-transform: uppercase;
               letter-spacing: 2px;
               font-weight: bold;
-
-              a {
-                color: #fff;
-              }
             }
           }
 
@@ -165,6 +161,8 @@ header {
               }
 
               a {
+                color: #fff;
+                
                 &:visited {
                   color: #fff;
                 }

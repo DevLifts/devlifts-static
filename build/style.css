@@ -640,8 +640,10 @@ header {
                   border-bottom: 3px #fff solid; }
                 header .header-content .desktop-nav nav ul li:hover {
                   border-bottom: 3px #fff solid; }
-                header .header-content .desktop-nav nav ul li a:visited {
-                  color: #fff; } }
+                header .header-content .desktop-nav nav ul li a {
+                  color: #fff; }
+                  header .header-content .desktop-nav nav ul li a:visited {
+                    color: #fff; } }
 
 .cta-btn {
   background-color: #1BBC9B;
