@@ -513,19 +513,20 @@ header {
     header .header-content .logo {
       z-index: 11;
       position: absolute;
-      top: 55px;
+      top: 25%;
       left: 25px;
       width: 65px;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
       color: #fff;
       float: left; }
+      @media screen and (min-width: 768px) {
+        header .header-content .logo {
+          top: 50%; } }
       header .header-content .logo img {
         width: 100%; }
     header .header-content .menu-icon {
       z-index: 11;
       position: absolute;
-      top: 35px;
+      top: 35%;
       right: 25px;
       width: 20px;
       height: 15px;
@@ -562,6 +563,9 @@ header {
         top: 5px;
         -webkit-transform: rotate(-135deg);
                 transform: rotate(-135deg); }
+      @media screen and (min-width: 768px) {
+        header .header-content .menu-icon {
+          display: none; } }
     header .header-content .nav-container {
       z-index: 10;
       position: absolute;
@@ -609,6 +613,35 @@ header {
           margin-top: 50px; }
       header .header-content .nav-container.open {
         top: 0; }
+    header .header-content .desktop-nav {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        header .header-content .desktop-nav {
+          display: block;
+          position: absolute;
+          top: 40%;
+          right: 25px; }
+          header .header-content .desktop-nav nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            header .header-content .desktop-nav nav ul {
+              -webkit-transform: translateY(30%);
+                      transform: translateY(30%);
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              color: #fff; }
+              header .header-content .desktop-nav nav ul li {
+                display: inline;
+                margin-right: 30px;
+                padding: 12px; }
+                header .header-content .desktop-nav nav ul li.active {
+                  border-bottom: 3px #fff solid; }
+                header .header-content .desktop-nav nav ul li:hover {
+                  border-bottom: 3px #fff solid; }
+                header .header-content .desktop-nav nav ul li a:visited {
+                  color: #fff; } }
 
 .cta-btn {
   background-color: #1BBC9B;
@@ -697,9 +730,12 @@ header {
       color: #fff; }
       @media screen and (min-width: 768px) {
         .hero .hero-content .intro {
-          line-height: 1.7; } }
+          line-height: 1.7;
+          font-size: 1.2rem; } }
     .hero .hero-content .cta-btn {
       margin-top: 15px; }
+      .hero .hero-content .cta-btn a {
+        font-size: 1rem; }
     .hero .hero-content .scroll-down {
       position: absolute;
       bottom: 0;
@@ -713,6 +749,13 @@ header {
               justify-content: center;
       width: 100%;
       padding-bottom: 50px; }
+      .hero .hero-content .scroll-down img {
+        width: 30px;
+        height: 15px; }
+        @media screen and (min-width: 768px) {
+          .hero .hero-content .scroll-down img {
+            width: initial;
+            height: initial; } }
 
 /*
 07. Trumps

@@ -64,11 +64,16 @@
 
       @include breakpoint(tablet) {
         line-height: 1.7;
+        font-size: 1.2rem;
       }
     }
 
     .cta-btn {
       margin-top: 15px;
+
+      a {
+        font-size: 1rem;
+      }
     }
 
     .scroll-down {
@@ -80,6 +85,16 @@
       justify-content: center;
       width: 100%;
       padding-bottom: 50px;
+
+      img {
+        width: 30px;
+        height: 15px;
+
+        @include breakpoint(tablet) {
+          width: initial;
+          height: initial;
+        }
+      }
     }
   }
 }
