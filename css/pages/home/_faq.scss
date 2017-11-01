@@ -1,0 +1,46 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  .faq-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $maxContentWidth;
+    margin: 5vh 6vw;
+
+    @include breakpoint(tablet) {
+      padding: 0 10vw;
+    }
+
+    @include breakpoint(desktop) {
+      padding: 0 20vw;
+    }
+
+    .question-group {
+      padding-left: 25px;
+      
+      p.question {
+        font-size: 1rem;
+        color: $black;
+        font-weight: 700;
+        text-indent: -1.4rem;
+
+        &:before {
+          content: "+ ";
+          color: $primaryGreen;
+          margin-right: 10px;
+          font-size: 1rem;
+        }
+      }
+
+      p.answer {
+        font-size: 1rem;
+        color: $grey;
+      }
+    }
+  }
+}
