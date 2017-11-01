@@ -1169,6 +1169,57 @@ hr {
           .pricing .pricing-content .price .bulk-discounts {
             font-size: 1rem; } }
 
+.refund-guarantee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #1BBC9B; }
+  @media screen and (min-width: 1024px) {
+    .refund-guarantee {
+      height: 70px; } }
+  .refund-guarantee .refund-guarantee-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1960px;
+    margin: 5vh 6vw 5vh 6vw; }
+    @media screen and (min-width: 1024px) {
+      .refund-guarantee .refund-guarantee-content {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .refund-guarantee .refund-guarantee-content p {
+      font-size: .8rem;
+      text-align: center;
+      color: #fff; }
+      .refund-guarantee .refund-guarantee-content p strong {
+        font-weight: 700; }
+      .refund-guarantee .refund-guarantee-content p:nth-of-type(2) strong {
+        font-weight: 600; }
+      @media screen and (min-width: 1024px) {
+        .refund-guarantee .refund-guarantee-content p:nth-of-type(2) {
+          margin-left: 10px; } }
+
 /*
 07. Trumps
 
