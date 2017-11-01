@@ -1040,6 +1040,135 @@ hr {
         .join .join-content p {
           padding: 0 15vw; } }
 
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .pricing .pricing-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media screen and (min-width: 1024px) {
+      .pricing .pricing-content {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .pricing .pricing-content .benefits {
+      background-color: #FBFBFB;
+      padding: 5vh 3vw 10vh 3vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media screen and (min-width: 1024px) {
+        .pricing .pricing-content .benefits {
+          width: 50vw;
+          padding: 5vh 8vw 10vh; } }
+      .pricing .pricing-content .benefits ul {
+        border: 1px #DBDBDB solid;
+        padding: 20px 30px;
+        list-style: none; }
+        @media screen and (min-width: 1024px) {
+          .pricing .pricing-content .benefits ul {
+            padding: 2vw 4vw; } }
+        .pricing .pricing-content .benefits ul li {
+          padding: 20px 0;
+          color: #636363;
+          text-indent: -1.2rem; }
+          .pricing .pricing-content .benefits ul li:before {
+            content: "• ";
+            color: #1BBC9B;
+            margin-right: 10px; }
+            @media screen and (min-width: 1024px) {
+              .pricing .pricing-content .benefits ul li:before {
+                font-size: 1.5rem; } }
+    .pricing .pricing-content .price {
+      background-color: #34495E;
+      padding: 5vh 3vw 10vh 3vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media screen and (min-width: 1024px) {
+        .pricing .pricing-content .price {
+          width: 50vw; } }
+      .pricing .pricing-content .price h3 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-transform: initial;
+        color: #fff; }
+        @media screen and (min-width: 1024px) {
+          .pricing .pricing-content .price h3 {
+            font-size: 1.5rem; } }
+      .pricing .pricing-content .price .prices {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 50vw; }
+        @media screen and (min-width: 768px) {
+          .pricing .pricing-content .price .prices {
+            width: 25vw; } }
+        .pricing .pricing-content .price .prices .regular-price {
+          margin: 0;
+          margin-right: 25px;
+          position: relative;
+          font-size: 1.25rem;
+          color: rgba(255, 255, 255, 0.4); }
+          .pricing .pricing-content .price .prices .regular-price:after {
+            content: '';
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%); }
+        .pricing .pricing-content .price .prices .discounted-price {
+          margin: 0;
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: #fff; }
+      .pricing .pricing-content .price .bulk-discounts {
+        margin-top: 50px;
+        font-size: 0.875rem;
+        color: #fff; }
+        @media screen and (min-width: 1024px) {
+          .pricing .pricing-content .price .bulk-discounts {
+            font-size: 1rem; } }
+
 /*
 07. Trumps
 
