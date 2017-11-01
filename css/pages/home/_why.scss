@@ -1,0 +1,63 @@
+.why {
+  display: flex;
+  flex-direction: column;
+
+  .why-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $maxContentWidth;
+    margin: 5vh 6vw 10vh 6vw;
+    
+    @include breakpoint(tablet) {
+      padding: 0 15vw;
+    }
+
+    hr {
+      background-color: $primaryGreen;
+      border: none;
+      width: 40px;
+      padding: 1px;
+    }
+
+    .testimonial {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .quote {
+        text-align: center;
+      }
+
+      .quoted {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .quoted-name {
+          margin: 0;
+          padding: 0;
+          font-size: 0.6875rem;
+          font-weight: 600;
+          color: $black;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        .quoted-position {
+          margin: 0;
+          padding: 0;
+          font-size: 0.5625rem;
+          color: $grey;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .cta-btn {
+      margin-top: 55px;
+    }
+  }
+}

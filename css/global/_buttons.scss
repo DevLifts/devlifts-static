@@ -3,19 +3,25 @@
   background-color: $primaryGreen;
   border-radius: 2px;
   padding: 12px 0;
+  max-width: 275px;
 
   &:hover {
     background-color: #fff;
+    border: 1px $primaryGreen solid;
+
+    a:hover {
+      color: $primaryGreen;
+    }
   }
 
   a {
-    color: $primaryGreen;
+    color: #fff;
     padding: 15px 30px;
     font-size: 0.8125rem;
     font-weight: 600;
 
     &:visited {
-      color: $primaryGreen;
+      color: #fff;
     }
 
     &:hover {
@@ -26,8 +32,20 @@
   &.white {
     background-color: #fff;
 
+    a {
+      color: $primaryGreen;
+
+      &:visited {
+        color: $primaryGreen;
+      }
+    }
+
     &:hover {
       background-color: $primaryGreen;
+
+      a:hover {
+        color: #fff;
+      }
     }
   }
 }

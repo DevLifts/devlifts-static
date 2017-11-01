@@ -44,11 +44,11 @@
       }
     }
 
-    .line {
-      height: 2px;
-      width: 35px;
-      padding: 1px;
+    hr {
       background-color: #fff;
+      border: none;
+      width: 40px;
+      padding: 1px;
 
       @include breakpoint(tablet) {
         width: 45px;
