@@ -1,0 +1,44 @@
+.refund-guarantee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: $primaryGreen;
+
+  @include breakpoint(desktop) {
+    height: 70px;
+  }
+
+  .refund-guarantee-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $maxContentWidth;
+    margin: 5vh 6vw 5vh 6vw;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+    
+    p {
+      font-size: .8rem;
+      text-align: center;
+      color: #fff;
+
+      strong {
+        font-weight: 700;
+      }
+
+      &:nth-of-type(2) {
+        strong {
+          font-weight: 600;
+        }
+
+        @include breakpoint(desktop) {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
