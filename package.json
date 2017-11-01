@@ -4,7 +4,12 @@
   "description": "Static frontend for DevLifts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clearBuild": "rm -rf build/ && mkdir build && mkdir build/images && mkdir build/images/dist && mkdir build/fonts && mkdir build/js",
+    "copyAssets": "cp -R images/dist/ build/images/dist && cp -R fonts/ build/fonts && cp -R js/ build/js",
+    "copyFiles": "cp *.html build/ && cp style.css build/",
+    "build": "npm run clearBuild && npm run copyAssets && npm run copyFiles",
+    "deploy": "npm run build && cd build && now"
   },
   "author": "",
   "license": "ISC",

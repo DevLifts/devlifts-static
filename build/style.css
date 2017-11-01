@@ -609,8 +609,6 @@ header {
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: bold; }
-            header .header-content .nav-container nav ul li a {
-              color: #fff; }
         header .header-content .nav-container nav .cta-btn {
           margin-top: 50px; }
       header .header-content .nav-container.open {
