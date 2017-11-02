@@ -529,7 +529,9 @@ header {
       @media screen and (min-width: 768px) {
         header .header-content .logo {
           top: 50%;
-          left: 40px; } }
+          left: 40px;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); } }
       @media screen and (min-width: 1024px) {
         header .header-content .logo {
           left: 60px; } }
@@ -642,15 +644,17 @@ header {
         header .header-content .desktop-nav {
           display: block;
           position: absolute;
-          top: 40%;
-          right: 25px; }
+          top: 50%;
+          right: 25px;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); }
           header .header-content .desktop-nav nav {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex; }
             header .header-content .desktop-nav nav ul {
-              -webkit-transform: translateY(30%);
-                      transform: translateY(30%);
+              -webkit-transform: translateY(25%);
+                      transform: translateY(25%);
               margin: 0;
               padding: 0;
               list-style: none;
@@ -1539,6 +1543,22 @@ hr {
           align-items: center;
   max-width: 1960px;
   margin: 5vh 6vw 10vh 6vw; }
+  @media screen and (min-width: 1024px) {
+    .page-content .inner-container {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+  .page-content .inner-container .featured-image {
+    margin-top: 25px; }
+    @media screen and (min-width: 1024px) {
+      .page-content .inner-container .featured-image {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        margin-right: -6vw;
+        max-height: 50%;
+        max-width: 90%; } }
+    .page-content .inner-container .featured-image img {
+      max-width: 100%; }
   .page-content .inner-container .order-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1564,6 +1584,15 @@ hr {
               align-items: center;
       padding: 5vh 6vw;
       background-color: #F7F7F7; }
+      @media screen and (min-width: 1024px) {
+        .page-content .inner-container .order-container .item-details {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .page-content .inner-container .order-container .item-details img {
+        border: 2px #1BBC9B solid;
+        padding: 15px; }
       .page-content .inner-container .order-container .item-details .name-and-description {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1575,10 +1604,27 @@ hr {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        @media screen and (min-width: 1024px) {
+          .page-content .inner-container .order-container .item-details .name-and-description {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            padding-left: 25px;
+            padding-right: 5%; } }
         .page-content .inner-container .order-container .item-details .name-and-description .item-name {
-          text-align: center; }
+          text-align: center;
+          font-weight: 600;
+          margin: 0; }
+          @media screen and (min-width: 1024px) {
+            .page-content .inner-container .order-container .item-details .name-and-description .item-name {
+              text-align: left; } }
         .page-content .inner-container .order-container .item-details .name-and-description .item-description {
-          text-align: center; }
+          text-align: center;
+          margin: 0;
+          margin-top: 10px; }
+          @media screen and (min-width: 1024px) {
+            .page-content .inner-container .order-container .item-details .name-and-description .item-description {
+              text-align: left; } }
       .page-content .inner-container .order-container .item-details .item-prices {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1625,6 +1671,9 @@ hr {
           -ms-flex-align: center;
               align-items: center;
       width: 90vw; }
+      @media screen and (min-width: 768px) {
+        .page-content .inner-container .order-container form.order-form {
+          width: 50vw; } }
       .page-content .inner-container .order-container form.order-form input {
         width: 100%;
         border: 1px #C7C7C7 solid;
@@ -1654,6 +1703,21 @@ hr {
         font-weight: 600;
         padding: 15px 50px;
         color: #1BBC9B; }
+        .page-content .inner-container .order-container form.order-form button:hover {
+          background-color: #1BBC9B;
+          color: #fff;
+          cursor: pointer; }
+    .page-content .inner-container .order-container .thank-you {
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-content .inner-container .order-container .thank-you p {
+        text-align: center; }
 
 /*
 07. Trumps

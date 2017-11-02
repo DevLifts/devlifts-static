@@ -22,6 +22,7 @@ header {
       @include breakpoint(tablet) {
         top: 50%;
         left: 40px;
+        transform: translateY(-50%);
       }
 
       @include breakpoint(desktop) {
@@ -157,14 +158,15 @@ header {
       @include breakpoint(tablet) {
         display: block;
         position: absolute;
-        top: 40%;
+        top: 50%;
         right: 25px;
+        transform: translateY(-50%);
         
         nav {
           display: flex;
 
           ul {
-            transform: translateY(30%);
+            transform: translateY(25%);
             margin: 0;
             padding: 0;
             list-style: none;

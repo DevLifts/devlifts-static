@@ -7,6 +7,25 @@
     max-width: $maxContentWidth;
     margin: 5vh 6vw 10vh 6vw;
 
+    @include breakpoint(desktop) {
+      align-items: flex-start;
+    }
+
+    .featured-image {
+      margin-top: 25px;
+      
+      @include breakpoint(desktop) {
+        align-self: flex-end;
+        margin-right: -6vw;
+        max-height: 50%;
+        max-width: 90%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
     .order-container {
       display: flex;
       flex-direction: column;
@@ -20,17 +39,44 @@
         padding: 5vh 6vw;
         background-color: $lightGrey;
 
+        @include breakpoint(desktop) {
+          flex-direction: row;
+        }
+
+        img {
+          border: 2px $primaryGreen solid;
+          padding: 15px;
+        }
+
         .name-and-description {
           display: flex;
           flex-direction: column;
           align-items: center;
 
+          @include breakpoint(desktop) {
+            align-items: flex-start;
+            padding-left: 25px;
+            padding-right: 5%;
+          }
+
           .item-name {
             text-align: center;
+            font-weight: 600;
+            margin: 0;
+
+            @include breakpoint(desktop) {
+              text-align: left;
+            }
           }
 
           .item-description {
             text-align: center;
+            margin: 0;
+            margin-top: 10px;
+
+            @include breakpoint(desktop) {
+              text-align: left;
+            }
           }
         }
 
@@ -79,6 +125,10 @@
         align-items: center;
         width: 90vw;
 
+        @include breakpoint(tablet) {
+          width: 50vw;
+        }
+
         input {
           width: 100%;
           border: 1px #C7C7C7 solid;
@@ -105,6 +155,22 @@
           font-weight: 600;
           padding: 15px 50px;
           color: $primaryGreen;
+
+          &:hover {
+            background-color: $primaryGreen;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .thank-you {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          text-align: center;
         }
       }
     }
