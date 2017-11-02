@@ -509,12 +509,12 @@ The Components layer is where we begin to style recognisable pieces of UI. We're
 We shouldn't find any selectors with a lower specificity than one class in this layer. This is where the majority of your work will happen after initial project set-up. Adding new components and features usually makes up the vast majority of development.
 */
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: transparent; }
+  background-color: #1BBC9B; }
   header .header-content {
     max-width: 1960px;
     height: 100px; }
@@ -756,9 +756,10 @@ footer {
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row; } }
-      footer .footer-content .footer-navigation .links-group {
-        height: 100px;
-        width: 40%; }
+      @media screen and (min-width: 1024px) {
+        footer .footer-content .footer-navigation .links-group {
+          height: 100px;
+          width: 40%; } }
       footer .footer-content .footer-navigation nav {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -888,7 +889,7 @@ footer {
   .cta-btn a {
     color: #fff;
     padding: 15px 30px;
-    font-size: 0.8125rem;
+    font-size: 1rem;
     font-weight: 600; }
     .cta-btn a:visited {
       color: #fff; }
@@ -1245,7 +1246,9 @@ hr {
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row;
-          margin: -10% auto 10% auto; } }
+          margin: -10% auto 10% auto;
+          -webkit-box-shadow: 60px 20px 60px 0px rgba(0, 0, 0, 0.2);
+                  box-shadow: 60px 20px 60px 0px rgba(0, 0, 0, 0.2); } }
       .join .join-content .image-roll img {
         width: 100%; }
     .join .join-content p {
@@ -1484,6 +1487,135 @@ hr {
       .faq .faq-content .question-group p.answer {
         font-size: 1rem;
         color: #636363; }
+
+.page-content .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1960px;
+  margin: 5vh 6vw 10vh 6vw; }
+  .page-content .inner-container .order-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25px; }
+    .page-content .inner-container .order-container .item-details {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 5vh 6vw;
+      background-color: #F7F7F7; }
+      .page-content .inner-container .order-container .item-details .name-and-description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .page-content .inner-container .order-container .item-details .name-and-description .item-name {
+          text-align: center; }
+        .page-content .inner-container .order-container .item-details .name-and-description .item-description {
+          text-align: center; }
+      .page-content .inner-container .order-container .item-details .item-prices {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .page-content .inner-container .order-container .item-details .item-prices .regular-price {
+          position: relative;
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: rgba(39, 39, 39, 0.3);
+          padding: 10px; }
+          .page-content .inner-container .order-container .item-details .item-prices .regular-price:after {
+            content: '';
+            background-color: #8B8B8B;
+            width: 90%;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateX(-90%);
+                    transform: translateX(-90%); }
+        .page-content .inner-container .order-container .item-details .item-prices .discounted-price {
+          position: relative;
+          font-size: 1.875rem;
+          font-weight: 600;
+          color: #272727;
+          padding: 10px; }
+    .page-content .inner-container .order-container .order-total strong {
+      color: #1BBC9B; }
+    .page-content .inner-container .order-container form.order-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 90vw; }
+      .page-content .inner-container .order-container form.order-form input {
+        width: 100%;
+        border: 1px #C7C7C7 solid;
+        border-radius: 2px;
+        margin-top: 10px;
+        padding: 10px;
+        color: #272727; }
+        .page-content .inner-container .order-container form.order-form input::-webkit-input-placeholder {
+          color: #C7C7C7;
+          font-size: 0.950rem; }
+        .page-content .inner-container .order-container form.order-form input:-ms-input-placeholder {
+          color: #C7C7C7;
+          font-size: 0.950rem; }
+        .page-content .inner-container .order-container form.order-form input::-ms-input-placeholder {
+          color: #C7C7C7;
+          font-size: 0.950rem; }
+        .page-content .inner-container .order-container form.order-form input::placeholder {
+          color: #C7C7C7;
+          font-size: 0.950rem; }
+      .page-content .inner-container .order-container form.order-form .order-form-note {
+        text-align: center;
+        font-size: 0.875rem; }
+      .page-content .inner-container .order-container form.order-form button {
+        border: 2px #1BBC9B solid;
+        background-color: #fff;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        padding: 15px 50px;
+        color: #1BBC9B; }
 
 /*
 07. Trumps

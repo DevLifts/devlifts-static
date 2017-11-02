@@ -72,8 +72,10 @@ footer {
       }
 
       .links-group {
-        height: 100px;
-        width: 40%;
+        @include breakpoint(desktop) {
+          height: 100px;
+          width: 40%;
+        }
       }
 
       nav {

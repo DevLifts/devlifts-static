@@ -20,3 +20,6 @@ We shouldn't find any selectors with a lower specificity than one class in this 
 @import 'pages/home/pricing';
 @import 'pages/home/refund-guarantee';
 @import 'pages/home/faq';
+
+// Import join components
+@import 'pages/join';

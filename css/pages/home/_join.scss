@@ -65,6 +65,7 @@
       @include breakpoint(desktop) {
         flex-direction: row;
         margin: -10% auto 10% auto;
+        box-shadow: 60px 20px 60px 0px rgba(0,0,0,0.2);
       }
 
       img {
