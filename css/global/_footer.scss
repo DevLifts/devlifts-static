@@ -1,0 +1,193 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $maxContentWidth;
+    margin: 5vh 6vw 10vh 6vw;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    h5 {
+      text-align: center;
+
+      @include breakpoint(desktop) {
+        text-align: left;
+      }
+    }
+
+    hr {
+      background-color: #fff;
+      width: 60px;
+      margin-top: 30px;
+
+      @include breakpoint(desktop) {
+        display: none;
+      }
+    }
+
+    .mission-statement {
+      width: 90vw;
+
+      @include breakpoint(tablet) {
+        width: 60vw;
+      }
+
+      @include breakpoint(desktop) {
+        flex: 1;
+      }
+      
+      p {
+        text-align: center;
+        color: #fff;
+
+        @include breakpoint(desktop) {
+          text-align: left;
+        }
+      }
+    }
+
+    .footer-navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90vw;
+
+      @include breakpoint(tablet) {
+        width: 60vw;
+      }
+
+      @include breakpoint(desktop) {
+        flex: 2;
+        flex-direction: row;
+      }
+
+      .links-group {
+        height: 100px;
+        width: 40%;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include breakpoint(desktop) {
+          height: 100%;
+          flex-wrap: wrap;
+        }
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 15px 100px;
+        margin-top: 15px;
+        border: 1px #fff solid;
+        color: #fff;
+
+        @include breakpoint(desktop) {
+          display: initial;
+          margin: 10px 0;
+          border: none;
+          padding: 0;
+          text-align: left;
+        }
+
+        &:visited {
+          color: #fff;
+        }
+
+        &:hover {
+          color: $primaryGreen;
+        }
+      }
+
+      a.contact-link {
+        margin-top: 15px;
+        padding: 0;
+        border: none;
+        color: #fff;
+
+        &:visited {
+          color: #fff;
+        }
+
+        &:hover {
+          color: $primaryGreen;
+          background-color: initial;
+        }
+      }
+    }
+
+    .newsletter-signup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90vw;
+
+      @include breakpoint(tablet) {
+        width: 60vw;
+      }
+
+      @include breakpoint(desktop) {
+        flex: 1;
+        justify-content: flex-end;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        @include breakpoint(desktop) {
+          flex-direction: row;
+        }
+
+        input {
+          background-color: transparent;
+          text-align: center;
+          padding: 15px;
+          width: 100%;
+          margin-top: 15px;
+          border: 1px #fff solid;
+          color: #fff;
+
+          @include breakpoint(desktop) {
+            width: 70%;
+          }
+        }
+
+        button {
+          width: 100%;
+          border: none;
+          margin-top: 15px;
+          padding: 15px;
+          background-color: #fff;
+          font-size: 1rem;
+          font-weight: 600;
+          color: $black;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+
+          @include breakpoint(desktop) {
+            width: 30%;
+            border: 1px #fff solid;
+          }
+        }
+      }
+    }
+  }
+}

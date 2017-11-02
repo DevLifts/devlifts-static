@@ -8,6 +8,7 @@ We shouldn't find any selectors with a lower specificity than one class in this 
 
 // Import global components
 @import 'global/header';
+@import 'global/footer';
 @import 'global/buttons';
 @import 'global/small-ui-components';
 
