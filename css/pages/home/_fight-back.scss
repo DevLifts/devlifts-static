@@ -3,7 +3,22 @@
   flex-direction: column;
   
   .section-banner {
-    width: 100vw;
+    overflow: hidden;
+
+    img {
+      max-height: 275px;
+      margin-left: -100px; 
+
+      @include breakpoint(tablet) {
+        max-height: 400px;
+        margin: 0;
+      }
+
+      @include breakpoint(desktop) {
+        max-height: none;
+        width: 100%;
+      }
+    }
   }
 
   .fight-back-content {
@@ -12,7 +27,8 @@
     justify-content: center;
     align-items: center;
     max-width: $maxContentWidth;
-    margin: 5vh 6vw 10vh 6vw;
+    margin: 0 auto;
+    padding: 5vh 6vw;
 
     p {
       text-align: center;
@@ -37,22 +53,23 @@
           padding: 5%;
           margin-bottom: 5%;
 
-          &:nth-of-type(2), &:nth-of-type(5)  {
+          &:nth-of-type(3n+2)  {
             border-left: 1px rgba(151, 151, 151, .2) solid;
             border-right: 1px rgba(151, 151, 151, .2) solid;
-
-            @include breakpoint(desktop) {
-              border: none;
-            }
           }
         }
 
         @include breakpoint(desktop) {
           width: 25%;
           margin-bottom: 2%;
-          
-          &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(5), &:nth-of-type(6) {
+
+          &:nth-of-type(1n) {
             border-right: 1px rgba(151, 151, 151, .2) solid;
+            border-left: none;
+          }
+
+          &:nth-of-type(4), &:nth-of-type(7) {
+            border-right: none;
           }
         }
 

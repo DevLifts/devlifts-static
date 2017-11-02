@@ -10,14 +10,20 @@
     justify-content: center;
     align-items: center;
     max-width: $maxContentWidth;
-    margin: 5vh 6vw;
+    margin: 0 auto;
+    padding: 5vh 6vw;
 
     @include breakpoint(tablet) {
-      padding: 0 10vw;
+      padding: 5vh 10vw;
     }
 
     @include breakpoint(desktop) {
-      padding: 0 20vw;
+      padding: 5vh 20vw;
+      align-items: flex-start;
+
+      h2 {
+        align-self: center;
+      }
     }
 
     .question-group {

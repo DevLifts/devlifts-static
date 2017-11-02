@@ -1,6 +1,4 @@
 footer {
-  display: flex;
-  flex-direction: column;
   background-color: $black;
 
   .footer-content {
@@ -9,11 +7,13 @@ footer {
     justify-content: center;
     align-items: center;
     max-width: $maxContentWidth;
-    margin: 5vh 6vw 10vh 6vw;
+    padding: 5vh 6vw 10vh;
 
     @include breakpoint(desktop) {
       flex-direction: row;
       align-items: flex-start;
+      margin: 0 auto;
+      padding: 5vh 6vw;
     }
 
     h5 {
@@ -115,7 +115,6 @@ footer {
       }
 
       a.contact-link {
-        margin-top: 15px;
         padding: 0;
         border: none;
         color: #fff;
@@ -144,7 +143,7 @@ footer {
 
       @include breakpoint(desktop) {
         flex: 1;
-        justify-content: flex-end;
+        align-items: flex-end;
       }
 
       form {
@@ -156,19 +155,21 @@ footer {
 
         @include breakpoint(desktop) {
           flex-direction: row;
+          position: relative;
         }
 
         input {
           background-color: transparent;
           text-align: center;
-          padding: 15px;
+          padding: 15px 10px;
           width: 100%;
           margin-top: 15px;
           border: 1px #fff solid;
           color: #fff;
 
           @include breakpoint(desktop) {
-            width: 70%;
+            width: 100%;
+            padding-right: 41%;
           }
         }
 
@@ -185,7 +186,10 @@ footer {
           letter-spacing: 1px;
 
           @include breakpoint(desktop) {
-            width: 30%;
+            width: 40%;
+            position: absolute;
+            top: 0;
+            right: 0;
             border: 1px #fff solid;
           }
         }

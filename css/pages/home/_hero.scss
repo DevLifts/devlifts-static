@@ -1,11 +1,17 @@
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-image: url('images/dist/running.jpg');
   background-repeat: no-repeat;
   background-position: right 5% top 15%;
   background-size: cover;
+  position: relative;
+
+  @include breakpoint(tablet) {
+    height: 75vh;
+  }
 
   // TODO: Swap background image
 
@@ -70,6 +76,10 @@
 
     .cta-btn {
       margin-top: 15px;
+
+      @include breakpoint(tablet) {
+        display: none;
+      }
 
       a {
         font-size: 1rem;

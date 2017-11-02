@@ -5,21 +5,14 @@
   align-content: center;
   background-color: $primaryGreen;
 
-  @include breakpoint(desktop) {
-    height: 70px;
-  }
-
   .refund-guarantee-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: $maxContentWidth;
-    margin: 5vh 6vw 5vh 6vw;
-
-    @include breakpoint(desktop) {
-      flex-direction: row;
-    }
+    margin: 0 auto;
+    padding: 5vh 6vw;
     
     p {
       font-size: .8rem;
@@ -34,10 +27,21 @@
         strong {
           font-weight: 600;
         }
+      }
+    }
 
-        @include breakpoint(desktop) {
-          margin-left: 10px;
-        }
+    .desktop-refund-policy {
+      display: none;
+      font-size: 1.25rem;
+    }
+
+    @include breakpoint(desktop) {
+      .mobile-refund-policy {
+        display: none;
+      }
+
+      .desktop-refund-policy {
+        display: block;
       }
     }
   }

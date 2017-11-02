@@ -21,6 +21,11 @@ header {
 
       @include breakpoint(tablet) {
         top: 50%;
+        left: 40px;
+      }
+
+      @include breakpoint(desktop) {
+        left: 60px;
       }
 
       img {
@@ -112,9 +117,10 @@ header {
             padding: 0;
             margin: 0;
             text-align: center;
+            width: 100%;
 
             li {
-              padding: 15px 90vw;
+              padding: 15px;
               color: #fff;
               text-transform: uppercase;
               letter-spacing: 2px;
@@ -122,23 +128,15 @@ header {
 
               &:hover {
                 background-color: #fff;
+
+                a {
+                  color: $primaryGreen;
+                }
               }
 
               a {
                 color: #fff;
-                padding: 15px 90vw;
-
-                &:hover {
-                  color: $primaryGreen;
-
-                  &:visited {
-                    color: $primaryGreen;
-                  }
-                }
-
-                &:visited {
-                  color: #fff;
-                }
+                padding: 15px;
               }
             }
           }
@@ -146,8 +144,6 @@ header {
           .cta-btn {
             margin-top: 50px;
           }
-
-          // TODO: Figure out why the nav position moves when I hover over this CTA button on desktop
         }
 
       &.open {
@@ -176,8 +172,12 @@ header {
     
             li {
               display: inline;
-              margin-right: 30px;
+              margin-right: 20px;
               padding: 12px;
+
+              @include breakpoint(desktop) {
+                margin-right: 30px;
+              }
 
               &.active {
                 border-bottom: 3px #fff solid;

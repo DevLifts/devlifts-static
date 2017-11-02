@@ -2,12 +2,12 @@
 .cta-btn {
   background-color: $primaryGreen;
   border-radius: 2px;
+  border: 1px $primaryGreen solid;
   padding: 12px 0;
   max-width: 275px;
 
   &:hover {
     background-color: #fff;
-    border: 1px $primaryGreen solid;
 
     a:hover {
       color: $primaryGreen;
@@ -20,17 +20,14 @@
     font-size: 1rem;
     font-weight: 600;
 
-    &:visited {
-      color: #fff;
-    }
-
-    &:hover {
+    &:visited, &:hover {
       color: #fff;
     }
   }
 
   &.white {
     background-color: #fff;
+    border: none;
 
     a {
       color: $primaryGreen;
