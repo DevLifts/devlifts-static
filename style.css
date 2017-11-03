@@ -1547,7 +1547,12 @@ hr {
     .page-content .inner-container {
       -webkit-box-align: start;
           -ms-flex-align: start;
-              align-items: flex-start; } }
+              align-items: flex-start;
+      margin: 10vh auto;
+      padding: 2vw; }
+      .page-content .inner-container hr.align-left-desktop {
+        text-align: left;
+        margin-left: 0; } }
   .page-content .inner-container .featured-image {
     margin-top: 25px; }
     @media screen and (min-width: 1024px) {

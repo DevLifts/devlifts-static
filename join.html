@@ -24,14 +24,14 @@
         <div class="nav-container">
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="/">Home</a></li>
+              <!-- <li><a href="#">About</a></li>
               <li><a href="#">Articles</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Contact</a></li> -->
             </ul>
 
             <div class="cta-btn white">
-              <a href="#">Join the Community</a>
+              <a href="join.html">Join the Community</a>
             </div>
 
           </nav>
@@ -40,14 +40,14 @@
         <div class="desktop-nav">
           <nav>
             <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="/">Home</a></li>
+              <!-- <li><a href="#">About</a></li>
               <li><a href="#">Articles</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Contact</a></li> -->
             </ul>
 
             <div class="cta-btn white">
-              <a href="#">Join the Community</a>
+              <a href="join.html">Join the Community</a>
             </div>
           </nav>
         </div>
@@ -57,7 +57,7 @@
     <div class="page-content">
       <div class="inner-container">
         <h3>Ready to join?</h3>
-        <hr>
+        <hr class="align-left-desktop">
 
         <h2>We're happy to have you on board</h2>
 
@@ -95,15 +95,16 @@
           </p>
           <hr>
 
-          <form action="#" class="order-form">
-            <input type="text" placeholder="Name*">
-            <input type="email" placeholder="Email*">
+          <form id="orderForm" action="https://hooks.zapier.com/hooks/catch/1776164/invpty/" method="POST" class="order-form">
+            <input type="text" name="First Name" placeholder="First Name*">
+            <input type="text" name="Last Name" placeholder="Last Name*">
+            <input type="email" name="Email" placeholder="Email*">
 
             <p class="order-form-note">
               We'll send you an invoice shortly after you sign up.
             </p>
 
-            <button>Sign Up</button>
+            <button type="submit" id="formSubmit">Sign Up</button>
           </form>
 
           <div class="thank-you">

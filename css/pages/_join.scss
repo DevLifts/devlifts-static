@@ -9,6 +9,13 @@
 
     @include breakpoint(desktop) {
       align-items: flex-start;
+      margin: 10vh auto;
+      padding: 2vw;
+
+      hr.align-left-desktop {
+        text-align: left;
+        margin-left: 0;
+      }
     }
 
     .featured-image {
