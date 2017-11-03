@@ -9,7 +9,7 @@
   &:hover {
     background-color: #fff;
 
-    a:hover {
+    a:hover, a:focus {
       color: $primaryGreen;
     }
   }
@@ -40,7 +40,7 @@
     &:hover {
       background-color: $primaryGreen;
 
-      a:hover {
+      a:hover, a:focus {
         color: #fff;
       }
     }

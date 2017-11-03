@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     max-width: $maxContentWidth;
     margin: 0 auto;
     padding: 5vh 6vw;
@@ -30,10 +29,12 @@
       padding-left: 25px;
       
       p.question {
+        cursor: pointer;
         font-size: 1rem;
         color: $black;
         font-weight: 700;
         text-indent: -1.4rem;
+        max-width: 470px;
 
         &:before {
           content: "+ ";
@@ -44,8 +45,10 @@
       }
 
       p.answer {
+        display: none;
         font-size: 1rem;
         color: $grey;
+        max-width: 470px;
       }
     }
   }

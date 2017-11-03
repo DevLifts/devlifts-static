@@ -95,10 +95,10 @@
           </p>
           <hr>
 
-          <form id="orderForm" action="https://hooks.zapier.com/hooks/catch/1776164/invpty/" method="POST" class="order-form">
-            <input type="text" name="First Name" placeholder="First Name*">
-            <input type="text" name="Last Name" placeholder="Last Name*">
-            <input type="email" name="Email" placeholder="Email*">
+          <form id="orderForm" class="order-form">
+            <input type="text" name="First Name" placeholder="First Name*" required>
+            <input type="text" name="Last Name" placeholder="Last Name*" required>
+            <input type="email" name="Email" placeholder="Email*" required>
 
             <p class="order-form-note">
               We'll send you an invoice shortly after you sign up.
@@ -106,6 +106,12 @@
 
             <button type="submit" id="formSubmit">Sign Up</button>
           </form>
+          
+          <div class="loader"></div>
+          
+          <p class="error">
+            Whoa there! That submission didn't go through. Try again, and if this persists, please contact me via email or Twitter!
+          </p>
 
           <div class="thank-you">
             <h2>Thank you!</h2>
@@ -137,7 +143,7 @@
         <hr>
 
         <div class="footer-navigation">
-          <div class="links-group">
+          <!-- <div class="links-group">
             <h5>Helpful</h5>
 
             <nav>
@@ -146,7 +152,7 @@
               <a href="#">Articles</a>
               <a href="#">Contact</a>
             </nav>
-          </div>
+          </div> -->
 
           <div class="links-group">
             <h5>Contact</h5>
@@ -161,8 +167,8 @@
 
         <div class="newsletter-signup">
           <h5>Get Weekly Fitness Tips and Stories</h5>
-          <form action="#">
-            <input type="text" placeholder=" Type your email to subscribe">
+          <form action="https://devlifts.us17.list-manage.com/subscribe/post?u=a0cae71d4aa2a2a86090ac37c&amp;id=bd2aae0b5b" method="POST">
+            <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="Type your email to subscribe">
             <button>Submit</button>
           </form>
         </div>
