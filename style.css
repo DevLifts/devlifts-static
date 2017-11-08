@@ -1419,10 +1419,16 @@ hr {
       .pricing .pricing-content .price .bulk-discounts {
         margin-top: 50px;
         font-size: 0.875rem;
-        color: #fff; }
+        color: #fff;
+        text-align: center; }
         @media screen and (min-width: 1024px) {
           .pricing .pricing-content .price .bulk-discounts {
             font-size: 1rem; } }
+        .pricing .pricing-content .price .bulk-discounts a {
+          color: #fff;
+          font-weight: 700; }
+          .pricing .pricing-content .price .bulk-discounts a:hover {
+            color: #1BBC9B; }
 
 .refund-guarantee {
   display: -webkit-box;
@@ -1465,7 +1471,7 @@ hr {
         font-weight: 600; }
     .refund-guarantee .refund-guarantee-content .desktop-refund-policy {
       display: none;
-      font-size: 1.25rem; }
+      font-size: 1.10rem; }
     @media screen and (min-width: 1024px) {
       .refund-guarantee .refund-guarantee-content .mobile-refund-policy {
         display: none; }

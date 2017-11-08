@@ -113,9 +113,19 @@
         margin-top: 50px;
         font-size: 0.875rem;
         color: #fff;
+        text-align: center;
 
         @include breakpoint(desktop) {
           font-size: 1rem;
+        }
+
+        a {
+          color: #fff;
+          font-weight: 700;
+
+          &:hover {
+            color: $primaryGreen;
+          }
         }
       }
     }
