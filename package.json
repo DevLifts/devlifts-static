@@ -9,7 +9,7 @@
     "copyAssets": "cp -R images/dist/ build/images/dist && cp -R fonts/ build/fonts && cp -R js/ build/js",
     "copyFiles": "cp *.html build/ && cp style.css build/ && cp *.json build/",
     "build": "npm run clearBuild && npm run copyAssets && npm run copyFiles",
-    "deploy": "npm run build && cd build && now"
+    "deploy": "npm run build && cd build && now && now alias"
   },
   "author": "",
   "license": "ISC",
