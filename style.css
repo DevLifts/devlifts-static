@@ -822,7 +822,7 @@ footer {
       width: 90vw; }
       @media screen and (min-width: 768px) {
         footer .footer-content .newsletter-signup {
-          width: 60vw; } }
+          width: 400px; } }
       @media screen and (min-width: 1024px) {
         footer .footer-content .newsletter-signup {
           -webkit-box-flex: 1;
@@ -855,7 +855,6 @@ footer {
             position: relative; } }
         footer .footer-content .newsletter-signup form input {
           background-color: transparent;
-          text-align: center;
           padding: 15px 10px;
           width: 100%;
           margin-top: 15px;
@@ -864,7 +863,7 @@ footer {
           @media screen and (min-width: 1024px) {
             footer .footer-content .newsletter-signup form input {
               width: 100%;
-              padding-right: 42%; } }
+              padding: 15px 5px; } }
         footer .footer-content .newsletter-signup form button {
           width: 100%;
           border: none;
@@ -879,10 +878,11 @@ footer {
           @media screen and (min-width: 1024px) {
             footer .footer-content .newsletter-signup form button {
               width: 40%;
-              position: absolute;
+              position: static;
               top: 0;
               right: 0;
-              border: 1px #fff solid; } }
+              border: 1px #fff solid;
+              border-radius: 0; } }
 
 .cta-btn {
   background-color: #1BBC9B;

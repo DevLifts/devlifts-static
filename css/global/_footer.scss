@@ -138,7 +138,7 @@ footer {
       width: 90vw;
 
       @include breakpoint(tablet) {
-        width: 60vw;
+        width: 400px;
       }
 
       @include breakpoint(desktop) {
@@ -160,7 +160,6 @@ footer {
 
         input {
           background-color: transparent;
-          text-align: center;
           padding: 15px 10px;
           width: 100%;
           margin-top: 15px;
@@ -169,7 +168,7 @@ footer {
 
           @include breakpoint(desktop) {
             width: 100%;
-            padding-right: 42%;
+            padding: 15px 5px;
           }
         }
 
@@ -187,10 +186,11 @@ footer {
 
           @include breakpoint(desktop) {
             width: 40%;
-            position: absolute;
+            position: static;
             top: 0;
             right: 0;
             border: 1px #fff solid;
+            border-radius: 0;
           }
         }
       }
