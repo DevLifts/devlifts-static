@@ -1,3 +1,25 @@
+.page-content {
+  .about-container {
+    justify-content: center;
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(tablet) {
+    align-items: flex-start;
+  }
+}
+
 .history {
   display: flex;
   flex-direction: column;
