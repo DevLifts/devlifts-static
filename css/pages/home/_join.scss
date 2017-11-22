@@ -15,7 +15,7 @@
     position: relative;
 
     @include breakpoint(desktop) {
-      padding: 5vh 6vw 15% 6vw;
+      padding: 5vh 6vw 150px 6vw;
     }
     
     &:before {
@@ -65,7 +65,7 @@
 
       @include breakpoint(desktop) {
         flex-direction: row;
-        margin: -15% auto 10% auto;
+        margin: -150px auto 10% auto;
         box-shadow: 60px 20px 60px 0px rgba(0,0,0,0.2);
         max-width: none;
       }

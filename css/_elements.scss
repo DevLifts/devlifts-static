@@ -58,4 +58,13 @@ p {
 /* Base Link Styles */
 a {
   text-decoration: none;
+  color: $primaryGreen;
+
+  &:hover {
+    color: $black;
+  }
+  
+  &:visited {
+    color: $primaryGreen;
+  }
 }
