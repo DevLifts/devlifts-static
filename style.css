@@ -513,8 +513,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
-  background-color: #1BBC9B; }
+  z-index: 10; }
   header .header-content {
     max-width: 1960px;
     height: 100px; }
@@ -524,7 +523,6 @@ header {
       top: 25%;
       left: 25px;
       width: 65px;
-      color: #fff;
       float: left; }
       @media screen and (min-width: 768px) {
         header .header-content .logo {
@@ -632,8 +630,7 @@ header {
               header .header-content .nav-container nav ul li:hover a {
                 color: #1BBC9B; }
             header .header-content .nav-container nav ul li a {
-              color: #fff;
-              padding: 15px; }
+              color: #fff; }
         header .header-content .nav-container nav .cta-btn {
           margin-top: 50px; }
       header .header-content .nav-container.open {
@@ -675,6 +672,37 @@ header {
                   color: #fff; }
                   header .header-content .desktop-nav nav ul li a:visited {
                     color: #fff; } }
+
+header.header-primary {
+  position: absolute;
+  background-color: transparent; }
+  header.header-primary .logo-black {
+    display: none; }
+  header.header-primary .logo-white {
+    display: block; }
+
+header.header-secondary .header-content .logo-black {
+  display: block; }
+
+header.header-secondary .header-content .logo-white {
+  display: none; }
+
+header.header-secondary .header-content .menu-icon span {
+  background: #272727; }
+
+header.header-secondary .header-content .menu-icon.open span {
+  background: #fff; }
+
+header.header-secondary .header-content .desktop-nav nav ul li {
+  color: #272727; }
+  header.header-secondary .header-content .desktop-nav nav ul li.active {
+    border-bottom: 3px #1BBC9B solid; }
+  header.header-secondary .header-content .desktop-nav nav ul li:hover {
+    border-bottom: 3px #1BBC9B solid; }
+  header.header-secondary .header-content .desktop-nav nav ul li a {
+    color: #272727; }
+    header.header-secondary .header-content .desktop-nav nav ul li a:visited {
+      color: #272727; }
 
 footer {
   background-color: #272727; }

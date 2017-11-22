@@ -4,7 +4,6 @@ header {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: $primaryGreen;
 
   .header-content {
     max-width: $maxContentWidth;
@@ -16,7 +15,6 @@ header {
       top: 25%;
       left: 25px;
       width: 65px;
-      color: #fff;
       float: left;
 
       @include breakpoint(tablet) {
@@ -137,7 +135,6 @@ header {
 
               a {
                 color: #fff;
-                padding: 15px;
               }
             }
           }
@@ -200,6 +197,64 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+header.header-primary {
+  position: absolute;
+  background-color: transparent;
+
+  .logo-black {
+    display: none;
+  }
+
+  .logo-white {
+    display: block;
+  }
+}
+
+header.header-secondary {
+  .header-content {
+    .logo-black {
+      display: block;
+    }
+
+    .logo-white {
+      display: none;
+    }
+
+    .menu-icon {
+      span {
+        background: $black;
+      }
+
+      &.open {
+        span {
+          background: #fff;
+        }
+      }
+    }
+
+    .desktop-nav nav ul li {
+      color: $black;
+
+      &.active {
+        border-bottom: 3px $primaryGreen solid;
+      }
+
+      &:hover {
+        border-bottom: 3px $primaryGreen solid;
+      }
+
+      a {
+        color: $black;
+        
+        &:visited {
+          color: $black;
+        }
+      }
+      
     }
   }
 }
