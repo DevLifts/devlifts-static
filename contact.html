@@ -80,9 +80,9 @@
         </div>
 
         <div class="contact-form-container">
-          <form action="#">
-            <input type="text" placeholder="Full Name*" required>
-            <input type="email" placeholder="Email*" required>
+          <form id="contactForm" class="contact-form">
+            <input type="text" name="name" placeholder="Full Name*" required>
+            <input type="email" name="email" placeholder="Email*" required>
 
             <p>How can we help you?</p>
 
@@ -90,6 +90,35 @@
 
             <button class="cta-btn transparent">Submit Message</button>
           </form>
+
+          <div class="loader"></div>
+
+          <p class="error">
+            Whoa there! That submission didn't go through. <a href="contact.html">Try again</a>, and if this persists, please contact us via email or <a href="https://twitter.com/devlifts">Twitter</a>!<br><br>
+  
+            For your convience, here's the message you typed. You can copy it so you don't have to re-type it:<br><br>
+  
+            <span id="typedMessage"></span>
+          </p>
+    
+          <div class="thank-you">
+            <h2>Awesome!</h2>
+            <p>
+              Your message has been sent and we will get in touch as soon as possible.
+            </p>
+  
+            <p>
+              In the meantime, would you like to learn more about DevLifts?
+            </p>
+            
+            <div class="cta-btn">
+              <a href="#">Sure, let's check it out!</a>
+            </div>
+  
+            <p>
+              Or <a href="contact.html">click here</a> to send another message.
+            </p>
+          </div>
         </div>
       </div>
     </div>

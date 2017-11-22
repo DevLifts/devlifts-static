@@ -1,45 +1,134 @@
-.contact-form-container {
-  margin-top: 50px;
-  width: 100%;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.page-content {
+  .contact-container {
     justify-content: center;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .text-left {
+      align-items: center;
+
+      @include breakpoint(desktop) {
+        align-items: flex-start;
+      }
+    }
+
+    a {
+      color: $primaryGreen;
+      
+      &:visited {
+        color: $primaryGreen;
+      }
+    }
+  }
+
+  .contact-form-container {
+    margin-top: 50px;
     width: 100%;
-  }
 
-  input {
-    width: 90%;
-    padding: 15px;
-    border: 1px solid #C7C7C7;
-    margin-bottom: 15px;
-
-    &::placeholder {
-      color: #C7C7C7;
+    @include breakpoint(desktop) {
+      max-width: 460px;
+      margin: 0;
     }
-  }
-
-  textarea {
-    width: 90%;
-    padding: 15px;
-    border: 1px solid #C7C7C7;
-    min-height: 200px;
-
-    &::placeholder {
-      color: #C7C7C7;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      
+      @include breakpoint(desktop) {
+        align-items: flex-start;
+      }
     }
-  }
+  
+    input {
+      width: 90%;
+      padding: 15px;
+      border: 1px solid #C7C7C7;
+      margin-bottom: 15px;
+  
+      &::placeholder {
+        color: #C7C7C7;
+      }
+    }
 
-  button.cta-btn {
-    margin-top: 15px;
-    padding: 15px;
-    color: $primaryGreen;
+    textarea {
+      width: 90%;
+      padding: 15px;
+      border: 1px solid #C7C7C7;
+      min-height: 200px;
+  
+      &::placeholder {
+        color: #C7C7C7;
+      }
+    }
+  
+    button.cta-btn {
+      margin-top: 15px;
+      padding: 15px;
+      color: $primaryGreen;
+  
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+      }
+    }
 
-    &:hover {
-      cursor: pointer;
-      color: #fff;
+    .loader {
+      display: none;
+      margin-top: 25px;
+      border: 8px solid $lightGrey;
+      border-top: 8px solid $primaryGreen;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin .8s linear infinite;
+      justify-self: center;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .error {
+      display: none;
+      color: #e74c3c;
+      padding: 20px;
+      border: 1px solid #e74c3c;
+    }
+
+    .thank-you {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        text-align: center;
+
+        a {
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+
+      .cta-btn {
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+          color: #fff;
+
+          &:hover {
+            color: $primaryGreen;
+          }
+        }
+      }
     }
   }
 }

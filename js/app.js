@@ -35,4 +35,29 @@ $( document ).ready( function() {
     });
   });
 
+  // Contact Form
+  $( '#contactForm' ).submit( function(e) {
+    e.preventDefault();
+
+    var message = $( '#message' ).val();
+
+    $( '.contact-form' ).slideToggle();
+    $( '.loader' ).show();
+
+    $.ajax({
+      url: 'https://hooks.zapier.com/hooks/catch/1776164/sr7f60/',
+      type: 'post',
+      data: $( '#contactForm' ).serialize(),
+      success: function() {
+        $( '.loader' ).hide();
+        $( '.thank-you' ).slideToggle();;
+      },
+      error: function() {
+        $( '.loader' ).hide();
+        $( '#typedMessage' ).html( "<strong>" + message + "</strong>" );
+        $( '.error' ).slideToggle();
+      }
+    })
+  })
+
 });

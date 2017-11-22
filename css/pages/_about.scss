@@ -9,6 +9,12 @@
   }
 }
 
+.featured-image {
+  @include breakpoint(desktop) {
+    order: 1;
+  }
+}
+
 .text-left {
   display: flex;
   flex-direction: column;
@@ -17,6 +23,10 @@
 
   @include breakpoint(tablet) {
     align-items: flex-start;
+  }
+
+  p {
+    max-width: 600px;
   }
 }
 

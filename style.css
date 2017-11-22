@@ -500,8 +500,6 @@ p {
 /* Base Link Styles */
 a {
   text-decoration: none; }
-  a:visited {
-    color: #1BBC9B; }
 
 /*
 06. Components
@@ -1824,6 +1822,12 @@ hr {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 
+@media screen and (min-width: 1024px) {
+  .featured-image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+
 .text-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1843,6 +1847,8 @@ hr {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; } }
+  .text-left p {
+    max-width: 600px; }
 
 .history {
   display: -webkit-box;
@@ -1907,10 +1913,40 @@ hr {
       .image-roll img {
         width: 34%; } }
 
-.contact-form-container {
+.page-content .contact-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media screen and (min-width: 1024px) {
+    .page-content .contact-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  .page-content .contact-container .text-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media screen and (min-width: 1024px) {
+      .page-content .contact-container .text-left {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
+  .page-content .contact-container a {
+    color: #1BBC9B; }
+    .page-content .contact-container a:visited {
+      color: #1BBC9B; }
+
+.page-content .contact-form-container {
   margin-top: 50px;
   width: 100%; }
-  .contact-form-container form {
+  @media screen and (min-width: 1024px) {
+    .page-content .contact-form-container {
+      max-width: 460px;
+      margin: 0; } }
+  .page-content .contact-form-container form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1925,39 +1961,88 @@ hr {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%; }
-  .contact-form-container input {
+    @media screen and (min-width: 1024px) {
+      .page-content .contact-form-container form {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
+  .page-content .contact-form-container input {
     width: 90%;
     padding: 15px;
     border: 1px solid #C7C7C7;
     margin-bottom: 15px; }
-    .contact-form-container input::-webkit-input-placeholder {
+    .page-content .contact-form-container input::-webkit-input-placeholder {
       color: #C7C7C7; }
-    .contact-form-container input:-ms-input-placeholder {
+    .page-content .contact-form-container input:-ms-input-placeholder {
       color: #C7C7C7; }
-    .contact-form-container input::-ms-input-placeholder {
+    .page-content .contact-form-container input::-ms-input-placeholder {
       color: #C7C7C7; }
-    .contact-form-container input::placeholder {
+    .page-content .contact-form-container input::placeholder {
       color: #C7C7C7; }
-  .contact-form-container textarea {
+  .page-content .contact-form-container textarea {
     width: 90%;
     padding: 15px;
     border: 1px solid #C7C7C7;
     min-height: 200px; }
-    .contact-form-container textarea::-webkit-input-placeholder {
+    .page-content .contact-form-container textarea::-webkit-input-placeholder {
       color: #C7C7C7; }
-    .contact-form-container textarea:-ms-input-placeholder {
+    .page-content .contact-form-container textarea:-ms-input-placeholder {
       color: #C7C7C7; }
-    .contact-form-container textarea::-ms-input-placeholder {
+    .page-content .contact-form-container textarea::-ms-input-placeholder {
       color: #C7C7C7; }
-    .contact-form-container textarea::placeholder {
+    .page-content .contact-form-container textarea::placeholder {
       color: #C7C7C7; }
-  .contact-form-container button.cta-btn {
+  .page-content .contact-form-container button.cta-btn {
     margin-top: 15px;
     padding: 15px;
     color: #1BBC9B; }
-    .contact-form-container button.cta-btn:hover {
+    .page-content .contact-form-container button.cta-btn:hover {
       cursor: pointer;
       color: #fff; }
+  .page-content .contact-form-container .loader {
+    display: none;
+    margin-top: 25px;
+    border: 8px solid #F7F7F7;
+    border-top: 8px solid #1BBC9B;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin .8s linear infinite;
+            animation: spin .8s linear infinite;
+    justify-self: center; }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+  .page-content .contact-form-container .error {
+    display: none;
+    color: #e74c3c;
+    padding: 20px;
+    border: 1px solid #e74c3c; }
+  .page-content .contact-form-container .thank-you {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-content .contact-form-container .thank-you p {
+      text-align: center; }
+      .page-content .contact-form-container .thank-you p a:hover {
+        color: #272727; }
+    .page-content .contact-form-container .thank-you .cta-btn {
+      margin: 0 auto;
+      text-align: center; }
+      .page-content .contact-form-container .thank-you .cta-btn a {
+        color: #fff; }
+        .page-content .contact-form-container .thank-you .cta-btn a:hover {
+          color: #1BBC9B; }
 
 /*
 07. Trumps
