@@ -6,12 +6,12 @@
       flex-direction: row;
       justify-content: space-between;
     }
-  }
-}
 
-.featured-image {
-  @include breakpoint(desktop) {
-    order: 1;
+    .featured-image {
+      @include breakpoint(desktop) {
+        order: 1;
+      }
+    }
   }
 }
 
