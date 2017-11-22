@@ -630,7 +630,10 @@ header {
               header .header-content .nav-container nav ul li:hover a {
                 color: #1BBC9B; }
             header .header-content .nav-container nav ul li a {
-              color: #fff; }
+              color: #fff;
+              padding-bottom: 5px; }
+              header .header-content .nav-container nav ul li a.active {
+                border-bottom: 3px solid #fff; }
         header .header-content .nav-container nav .cta-btn {
           margin-top: 50px; }
       header .header-content .nav-container.open {
@@ -939,6 +942,16 @@ footer {
     .cta-btn.white:hover {
       background-color: #1BBC9B; }
       .cta-btn.white:hover a:hover, .cta-btn.white:hover a:focus {
+        color: #fff; }
+  .cta-btn.transparent {
+    background-color: transparent; }
+    .cta-btn.transparent a {
+      color: #1BBC9B; }
+      .cta-btn.transparent a:visited {
+        color: #1BBC9B; }
+    .cta-btn.transparent:hover {
+      background-color: #1BBC9B; }
+      .cta-btn.transparent:hover a:hover, .cta-btn.transparent:hover a:focus {
         color: #fff; }
 
 hr {
@@ -1794,6 +1807,69 @@ hr {
           text-align: center; }
         .page-content .inner-container .order-container .thank-you .cta-btn {
           margin: 0 auto; }
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F7F7F7;
+  padding: 5vh 6vw 10vh 6vw; }
+
+.cta-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh 6vw 10vh 6vw; }
+  .cta-section p {
+    margin-top: 100px;
+    text-align: center; }
+
+.image-roll {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 75%;
+  -webkit-box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.2); }
+  @media screen and (min-width: 1024px) {
+    .image-roll {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-shadow: 60px 20px 60px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 60px 20px 60px 0px rgba(0, 0, 0, 0.2);
+      max-width: none; } }
+  .image-roll img {
+    width: 100%; }
+    @media screen and (min-width: 1024px) {
+      .image-roll img {
+        width: 34%; } }
 
 /*
 07. Trumps

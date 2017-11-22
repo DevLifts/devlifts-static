@@ -135,6 +135,11 @@ header {
 
               a {
                 color: #fff;
+                padding-bottom: 5px;
+
+                &.active {
+                  border-bottom: 3px solid #fff;
+                }
               }
             }
           }

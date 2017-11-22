@@ -45,4 +45,24 @@
       }
     }
   }
+
+  &.transparent {
+    background-color: transparent;
+    
+    a {
+      color: $primaryGreen;
+
+      &:visited {
+        color: $primaryGreen;
+      }
+    }
+
+    &:hover {
+      background-color: $primaryGreen;
+
+      a:hover, a:focus {
+        color: #fff;
+      }
+    }
+  }
 }
