@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Join the Community | DevLifts</title>
+    <title>Contact Us | DevLifts</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="alternate" type="application/rss+xml" title="Refactor Your Body RSS" href="https://rss.simplecast.com/podcasts/3783/rss" />
@@ -31,9 +31,10 @@
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <!--
-              <li><a href="#">Articles</a></li> -->
-              <li><a href="contact.html">Contact</a></li>
+              <!-- 
+              <li><a href="#">Articles</a></li>
+              -->
+              <li><a class="active" href="#">Contact</a></li>
             </ul>
 
             <div class="cta-btn white">
@@ -48,12 +49,11 @@
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <!-- 
-              <li><a href="#">Articles</a></li> -->
-              <li><a href="contact.html">Contact</a></li>
+              <!-- <li><a href="#">Articles</a></li> -->
+              <li class="active"><a href="#">Contact</a></li>
             </ul>
 
-            <div class="cta-btn white">
+            <div class="cta-btn">
               <a href="join.html">Join the Community</a>
             </div>
           </nav>
@@ -62,76 +62,38 @@
     </header>
 
     <div class="page-content">
-      <div class="inner-container">
-        <h3>Ready to join?</h3>
-        <hr class="align-left-desktop">
+      <div class="inner-container contact-container">
+        <div class="text-left">
+          <h3>Drop us a line</h3>
+          <hr class="align-left-desktop">
 
-        <h2>We're happy to have you on board</h2>
+          <h2>We would love to get to know you</h2>
 
-        <div class="featured-image">
-          <img src="images/dist/runner-large.jpg" alt="Runner">
+          <p>
+            Email us: jc@devlifts.io
+          </p>
+
+          <p>
+            Twitter: <a href="https://twitter.com/devlifts">@DevLifts</a><br>
+            Instagram: <a href="https://instagram.com/devlifts">@DevLifts</a>
+          </p>
         </div>
 
-        <div class="order-container">
-          <h3>Almost there</h3>
-          <hr>
+        <div class="contact-form-container">
+          <form action="#">
+            <input type="text" placeholder="Full Name*" required>
+            <input type="email" placeholder="Email*" required>
 
-          <h2>Review your order</h2>
+            <p>How can we help you?</p>
 
-          <div class="item-details">
-            <img src="images/dist/calculator.png" alt="Calculator icon">
+            <textarea name="message" id="message" placeholder="Add as many details as you want"></textarea>
 
-            <div class="name-and-description">
-              <h4 class="item-name">
-                8-week personalized training and nutrition plan
-              </h4>
-
-              <p class="item-description">
-                Plus: Access to the DevLifts Slack Community, an initial 30 minute talk with the founders who will also do constant check ups on your progress.
-              </p>
-            </div>
-
-            <div class="item-prices">
-              <div class="regular-price">$249</div>
-              <div class="discounted-price">$149</div>
-            </div>
-          </div> <!-- .item-details -->
-
-          <p class="order-total">
-            Your order total is <strong>$149</strong>
-          </p>
-          <hr>
-
-          <form id="orderForm" class="order-form">
-            <input type="text" name="First Name" placeholder="First Name*" required>
-            <input type="text" name="Last Name" placeholder="Last Name*" required>
-            <input type="email" name="Email" placeholder="Email*" required>
-            <input type="text" name="Coupon" placeholder="Coupon Code (optional)">
-
-            <p class="order-form-note">
-              We'll send you an invoice shortly after you sign up. <strong>If you provided a valid coupon code, we will deduct the discount on your invoice (there's no validation here so don't expect the price above to change). :-)</strong>
-            </p>
-
-            <button type="submit" id="formSubmit">Sign Up</button>
+            <button class="cta-btn transparent">Submit Message</button>
           </form>
-          
-          <div class="loader"></div>
-          
-          <p class="error">
-            Whoa there! That submission didn't go through. Try again, and if this persists, please contact me via email or Twitter!
-          </p>
-
-          <div class="thank-you">
-            <h2>Thank you!</h2>
-            <p>You should be receiving an invoice very soon.</p>
-            <div class="cta-btn">
-              <a href="#">Do you have any questions?</a>
-            </div>
-          </div>
-        </div> <!-- .order-container -->
-      </div> <!-- .inner-container -->
-    </div> <!-- .page-content -->
-
+        </div>
+      </div>
+    </div>
+  
     <footer>
       <div class="footer-content">
         <div class="mission-statement">
@@ -182,6 +144,7 @@
         </div>
       </div> <!-- .footer-content -->
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
 
@@ -194,6 +157,5 @@
 
       gtag('config', 'UA-98117680-1');
     </script>
-
   </body>
 </html>

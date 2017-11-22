@@ -1,0 +1,45 @@
+.contact-form-container {
+  margin-top: 50px;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #C7C7C7;
+    margin-bottom: 15px;
+
+    &::placeholder {
+      color: #C7C7C7;
+    }
+  }
+
+  textarea {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #C7C7C7;
+    min-height: 200px;
+
+    &::placeholder {
+      color: #C7C7C7;
+    }
+  }
+
+  button.cta-btn {
+    margin-top: 15px;
+    padding: 15px;
+    color: $primaryGreen;
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}

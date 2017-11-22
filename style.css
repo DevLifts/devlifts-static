@@ -500,6 +500,8 @@ p {
 /* Base Link Styles */
 a {
   text-decoration: none; }
+  a:visited {
+    color: #1BBC9B; }
 
 /*
 06. Components
@@ -1904,6 +1906,58 @@ hr {
     @media screen and (min-width: 1024px) {
       .image-roll img {
         width: 34%; } }
+
+.contact-form-container {
+  margin-top: 50px;
+  width: 100%; }
+  .contact-form-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+  .contact-form-container input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #C7C7C7;
+    margin-bottom: 15px; }
+    .contact-form-container input::-webkit-input-placeholder {
+      color: #C7C7C7; }
+    .contact-form-container input:-ms-input-placeholder {
+      color: #C7C7C7; }
+    .contact-form-container input::-ms-input-placeholder {
+      color: #C7C7C7; }
+    .contact-form-container input::placeholder {
+      color: #C7C7C7; }
+  .contact-form-container textarea {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #C7C7C7;
+    min-height: 200px; }
+    .contact-form-container textarea::-webkit-input-placeholder {
+      color: #C7C7C7; }
+    .contact-form-container textarea:-ms-input-placeholder {
+      color: #C7C7C7; }
+    .contact-form-container textarea::-ms-input-placeholder {
+      color: #C7C7C7; }
+    .contact-form-container textarea::placeholder {
+      color: #C7C7C7; }
+  .contact-form-container button.cta-btn {
+    margin-top: 15px;
+    padding: 15px;
+    color: #1BBC9B; }
+    .contact-form-container button.cta-btn:hover {
+      cursor: pointer;
+      color: #fff; }
 
 /*
 07. Trumps
