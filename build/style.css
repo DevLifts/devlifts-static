@@ -1837,12 +1837,11 @@ hr {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-
-@media screen and (min-width: 1024px) {
-  .featured-image {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; } }
+  @media screen and (min-width: 1024px) {
+    .page-content .about-container .featured-image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
 
 .text-left {
   display: -webkit-box;
