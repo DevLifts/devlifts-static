@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us | DevLifts</title>
+    <title>Contact Us | DevLifts</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="alternate" type="application/rss+xml" title="Refactor Your Body RSS" href="https://rss.simplecast.com/podcasts/3783/rss" />
@@ -30,10 +30,11 @@
           <nav>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a class="active" href="#">About</a></li>
+              <li><a href="about.html">About</a></li>
               <!-- 
-              <li><a href="#">Articles</a></li> -->
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Articles</a></li>
+              -->
+              <li><a class="active" href="#">Contact</a></li>
             </ul>
 
             <div class="cta-btn white">
@@ -47,9 +48,9 @@
           <nav>
             <ul>
               <li><a href="/">Home</a></li>
-              <li class="active"><a href="#">About</a></li>
+              <li><a href="about.html">About</a></li>
               <!-- <li><a href="#">Articles</a></li> -->
-              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="#">Contact</a></li>
             </ul>
 
             <div class="cta-btn">
@@ -61,73 +62,67 @@
     </header>
 
     <div class="page-content">
-      <div class="inner-container about-container">
-        <div class="featured-image">
-          <img src="images/dist/thad-jc.jpg" alt="Thad &amp; J.C.">
-        </div>
+      <div class="inner-container contact-container">
         <div class="text-left">
-          <h3>About Us</h3>
+          <h3>Drop us a line</h3>
           <hr class="align-left-desktop">
 
-          <h2>Who we are</h2>
+          <h2>We would love to get to know you</h2>
 
           <p>
-            <strong>J.C. Hiatt</strong>
-            <br><br>
-            J.C. has worked as a web developer in Jackson, MS, for six years, where he currently lives with his wife Haleigh. Under co-founder Thad’s programming, he first began to develop his fitness in 2015. His primary focus is powerlifting and bodybuilding, but he also practices Brazilian jiu jitsu and competes in obstacle course races. J.C. is currently pursuing personal training certification.
+            Email us: jc@devlifts.io
           </p>
-          
+
           <p>
-            <strong>Thad Daniels</strong>
-            <br><br>
-            Thad splits his time between Jackson, MS, and Lesvos, Greece, paying the bills as a personal trainer and volunteering in a refugee camp, respectively. Currently, his primary focus is olympic weightlifting and athletic conditioning, although his fitness journey has been shaped by his life, resulting in the development a range of interests, including high school athletics, bodybuilding, obstacle course racing, crossfit, bodyweight travel workouts, and powerlifting.
+            Twitter: <a href="https://twitter.com/devlifts">@DevLifts</a><br>
+            Instagram: <a href="https://instagram.com/devlifts">@DevLifts</a>
           </p>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <input type="text" name="name" placeholder="Full Name*" required>
+            <input type="email" name="email" placeholder="Email*" required>
+
+            <p>How can we help you?</p>
+
+            <textarea name="message" id="message" placeholder="Add as many details as you want"></textarea>
+
+            <button class="cta-btn transparent">Submit Message</button>
+          </form>
+
+          <div class="loader"></div>
+
+          <p class="error">
+            Whoa there! That submission didn't go through. <a href="contact.html">Try again</a>, and if this persists, please contact us via email or <a href="https://twitter.com/devlifts">Twitter</a>!<br><br>
+  
+            For your convience, here's the message you typed. You can copy it so you don't have to re-type it:<br><br>
+  
+            <span id="typedMessage"></span>
+          </p>
+    
+          <div class="thank-you">
+            <h2>Awesome!</h2>
+            <p>
+              Your message has been sent and we will get in touch as soon as possible.
+            </p>
+  
+            <p>
+              In the meantime, would you like to learn more about DevLifts?
+            </p>
+            
+            <div class="cta-btn">
+              <a href="#">Sure, let's check it out!</a>
+            </div>
+  
+            <p>
+              Or <a href="contact.html">click here</a> to send another message.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-
-    <section class="history">
-      <h3>How did it start</h3>
-      <hr>
-
-      <h2>We were exactly where you are now</h2>
-
-      <p>
-        DevLifts founder J.C. noticed his health deteriorating in the summer of 2015. The owner of a web shop in Jackson, MS, his life mainly consisted of sitting, eating, and being stressed. These compounded into poor sleep, low energy, aches and pains, and 50 pounds of weight gain over the previous four years.
-      </p>
-      <p>
-        In the meantime, DevLifts co-founder Thad, a friend from high school, had become a personal trainer and was living in town. During the fall of 2015, Thad trained J.C. in the gym and in the kitchen, teaching him how to make healthy, sustainable changes to his life and more importantly, how to make them stick. In fact, when Thad left the country for a year of volunteering, J.C. was able to keep up his new habits without requiring Thad’s supervision.
-      <p>
-        On Thad’s re-entry to the States, J.C. approached him with an idea — to partner together and give other developers what Thad gave J.C. in 2015. To create a community where developers can come together and learn more about training, nutrition, and themselves. To help individuals who are constantly forced into unhealthy environments understand that it doesn’t have to be that way.
-    </p>
-    
-      <div class="image-roll">
-        <img src="images/dist/history-1.jpg">
-        <img src="images/dist/history-2.jpg">
-        <img src="images/dist/history-3.jpg">
-      </div>
-    </section>
-
-    <!-- TODO: Add testimonials -->
-
-    <section class="cta-section">
-      <h3>Ready to change your life?</h3>
-      <hr>
-
-      <h2>We would love to get to know you</h2>
-
-      <div class="cta-btn">
-        <a href="join.html">Join the Community</a>
-      </div>
-
-      <p>
-        Have any doubts or questions for us?
-      </p>
-
-      <div class="cta-btn transparent">
-        <a href="contact.html">Get in Touch</a>
-      </div>      
-    </section>
+  
     <footer>
       <div class="footer-content">
         <div class="mission-statement">
