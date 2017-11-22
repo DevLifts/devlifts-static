@@ -20,13 +20,13 @@ $( document ).ready( function() {
 
 
     $.ajax({
-      url: 'https://hooks.zapier.com/hooks/catch/1776164/si5sop/',
+      url: 'https://hooks.zapier.com/hooks/catch/1776164/sifwkw/',
       type: 'post',
       data: $( '#orderForm' ).serialize(),
       success: function() {
         $( '.loader' ).hide();
         $( '.thank-you' ).slideToggle();
-        decrementDiscounts();
+        gtag('event', 'purchase');
       },
       error: function() {
         $( '.loader' ).hide();
