@@ -806,9 +806,7 @@ footer {
         width: 100%; }
         @media screen and (min-width: 1024px) {
           footer .footer-content .footer-navigation nav {
-            height: 100%;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; } }
+            height: 100%; } }
       footer .footer-content .footer-navigation a {
         display: block;
         text-align: center;
@@ -1063,6 +1061,24 @@ hr {
           .hero .hero-content .scroll-down img {
             width: initial;
             height: initial; } }
+
+.maitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 320px;
+  padding: 2vh 2vw;
+  background-color: #FBFBFB; }
 
 .why {
   display: -webkit-box;
