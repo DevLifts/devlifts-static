@@ -2,3 +2,5 @@
 *.DS_Store
 *.env
 *.dev.env
+/server/stripe.js
+/build/server/stripe.js
