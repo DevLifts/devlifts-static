@@ -1,7 +1,7 @@
 {
   "name": "devlifts-static",
   "description": "A static frontend for DevLifts",
-  "type": "static",
+  "type": "node",
   "alias": [
     "www.devlifts.io",
     "devlifts.io"

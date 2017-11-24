@@ -8,8 +8,10 @@
     "clearBuild": "rm -rf build/ && mkdir build && mkdir build/images && mkdir build/images/dist && mkdir build/fonts && mkdir build/js",
     "copyAssets": "cp -R images/dist/ build/images/dist && cp -R fonts/ build/fonts && cp -R js/ build/js",
     "copyFiles": "cp *.html build/ && cp style.css build/ && cp *.json build/",
-    "build": "npm run clearBuild && npm run copyAssets && npm run copyFiles",
-    "deploy": "npm run build && cd build && now && now alias"
+    "copyServer": "cp -R server/ build/server/",
+    "build": "gulp sass && gulp js && gulp images && npm run clearBuild && npm run copyAssets && npm run copyFiles && npm run copyServer",
+    "deploy": "npm run build && cd build && now && now alias",
+    "start": "node server/server.js"
   },
   "author": "",
   "license": "ISC",
