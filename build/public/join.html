@@ -102,31 +102,18 @@
           </p>
           <hr>
 
-          <form action="/your-server-side-code" method="POST">
-            <script
-              src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_rkaLVAiIshvS5n9HE7OHyY5A" data-amount="14900" 
-              data-currency="USD" 
-              data-name="DevLifts" 
-              data-description="Personalized Training Plan" 
-              data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-              data-locale="auto" 
-              data-zip-code="true" 
-              data-label="Let's do this!">
-            </script>
-          </form>
-
           <form id="orderForm" class="order-form">
-            <input type="text" name="First Name" placeholder="First Name*" required>
-            <input type="text" name="Last Name" placeholder="Last Name*" required>
+            <input type="text" name="firstName" placeholder="First Name*" required>
+            <input type="text" name="lastName" placeholder="Last Name*" required>
             <input type="email" name="Email" placeholder="Email*" required>
-            <input type="text" name="Coupon" placeholder="Coupon Code (optional)">
+            <input type="text" name="couponCode" placeholder="Coupon Code (optional)">
 
             <p class="order-form-note">
               We'll send you an invoice shortly after you sign up.<br>
               If you provided a valid coupon code, we will deduct the discount on your invoice <strong>(there's no validation here so don't expect the price above to change)</strong>. :-)
             </p>
 
-            <button type="submit" id="formSubmit">Sign Up</button>
+            <button type="submit" id="orderFormSubmit">Sign Up</button>
           </form>
           
           <div class="loader"></div>
@@ -199,6 +186,7 @@
       </div> <!-- .footer-content -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
     <script src="js/app.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

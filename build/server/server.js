@@ -12,6 +12,8 @@ const app = express();
 const keyPublishable = process.env.STRIPE_PUBLIC_TEST;
 const keySecret = process.env.STRIPE_SECRET_TEST;
 
+const coupons = process.env.COUPONS.split(' ');
+
 const stripe = require("stripe")(keySecret);
 
 // Define the port to run on and use body-parser
@@ -29,10 +31,16 @@ const server = app.listen(app.get('port'), function() {
 
 app.post("/charge", (req, res) => {
   let amount = 14900;
+  console.log(req.body);
+  console.log(coupons);
 
   stripe.customers.create({
     email: req.body.stripeEmail,
-    source: req.body.stripeToken
+    source: req.body.stripeToken,
+    metadata: {
+      'first_name': req.body.firstName,
+      'last_name': req.body.lastName
+    }
   })
   .then(customer =>
     stripe.charges.create({
