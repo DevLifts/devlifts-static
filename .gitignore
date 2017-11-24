@@ -1,5 +1,7 @@
 /node_modules/
 /build/
+/build/style.css
+/build/package.json
 *.DS_Store
 *.env
 *.dev.env

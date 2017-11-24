@@ -9,7 +9,7 @@
     "copyAssets": "cp -R images/dist/ build/images/dist && cp -R fonts/ build/fonts && cp -R js/ build/js",
     "copyFiles": "cp *.html build/ && cp style.css build/ && cp *.json build/",
     "copyOther": "cp -R .well-known/ build/.well-known",
-    "build": "npm run clearBuild && npm run copyAssets && npm run copyFiles && npm run copyOther",
+    "build": "gulp sass && gulp js && gulp images && npm run clearBuild && npm run copyAssets && npm run copyFiles && npm run copyOther",
     "deploy": "npm run build && cd build && now && now alias"
   },
   "author": "",
