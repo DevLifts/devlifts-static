@@ -102,6 +102,19 @@
           </p>
           <hr>
 
+          <form action="/your-server-side-code" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_rkaLVAiIshvS5n9HE7OHyY5A" data-amount="14900" 
+              data-currency="USD" 
+              data-name="DevLifts" 
+              data-description="Personalized Training Plan" 
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+              data-locale="auto" 
+              data-zip-code="true" 
+              data-label="Let's do this!">
+            </script>
+          </form>
+
           <form id="orderForm" class="order-form">
             <input type="text" name="First Name" placeholder="First Name*" required>
             <input type="text" name="Last Name" placeholder="Last Name*" required>
