@@ -1,3 +1,4 @@
+require('dotenv').config()
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
@@ -54,3 +55,4 @@ http.createServer(function (req, res) {
   });
 }).listen(parseInt(port));
 console.log(`Server listening on port ${port}`);
+console.log(process.env);
