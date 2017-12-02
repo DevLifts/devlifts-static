@@ -8,10 +8,20 @@
     max-width: $maxContentWidth;
     margin: 5vh 6vw 10vh 6vw;
 
+    .page-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     @include breakpoint(desktop) {
-      align-items: flex-start;
       margin: 10vh auto;
       padding: 2vw;
+
+      .page-heading {
+        align-self: flex-start;
+        align-items: flex-start;
+      }
 
       hr.align-left-desktop {
         text-align: left;

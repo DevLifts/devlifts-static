@@ -1613,13 +1613,27 @@ hr {
             align-items: center;
     max-width: 1960px;
     margin: 5vh 6vw 10vh 6vw; }
+    .page-content .inner-container .page-heading {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     @media screen and (min-width: 1024px) {
       .page-content .inner-container {
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
         margin: 10vh auto;
         padding: 2vw; }
+        .page-content .inner-container .page-heading {
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
         .page-content .inner-container hr.align-left-desktop {
           text-align: left;
           margin-left: 0; } }
