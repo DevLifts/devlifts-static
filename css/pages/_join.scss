@@ -152,6 +152,20 @@
           }
         }
 
+        .order-form-newsletter-signup {
+          display: flex;
+          margin-top: 15px;
+
+          input[type="checkbox"] {
+            width: auto;
+            margin: 5px;
+          }
+
+          label {
+            margin: 5px;
+          }
+        }
+
         .order-form-note {
           text-align: center;
           font-size: 0.875rem;

@@ -1769,6 +1769,16 @@ hr {
           .page-content .inner-container .order-container form.order-form input::placeholder {
             color: #C7C7C7;
             font-size: 0.950rem; }
+        .page-content .inner-container .order-container form.order-form .order-form-newsletter-signup {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 15px; }
+          .page-content .inner-container .order-container form.order-form .order-form-newsletter-signup input[type="checkbox"] {
+            width: auto;
+            margin: 5px; }
+          .page-content .inner-container .order-container form.order-form .order-form-newsletter-signup label {
+            margin: 5px; }
         .page-content .inner-container .order-container form.order-form .order-form-note {
           text-align: center;
           font-size: 0.875rem; }

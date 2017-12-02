@@ -87,7 +87,7 @@
               </h4>
 
               <p class="item-description">
-                Plus: Access to the DevLifts Slack Community, an initial 30 minute talk with the founders who will also do constant check ups on your progress.
+                Plus: An in-depth consultation questionnaire, access to our private Slack Community, and regular check-ins
               </p>
             </div>
 
@@ -103,14 +103,22 @@
           <hr>
 
           <form id="orderForm" class="order-form">
+            <p class="order-form-note">
+              <strong>Please read this:</strong> Due to the high volume of orders we've recently had, our estimated plan timeframe of delivering your plan is 1-2 weeks from when you complete your questionnaire. You should receive a questionnaire within a couple of days of ordering!
+            </p>
+
             <input type="text" name="First Name" placeholder="First Name*" required>
             <input type="text" name="Last Name" placeholder="Last Name*" required>
             <input type="email" name="Email" placeholder="Email*" required>
             <input type="text" name="Coupon" placeholder="Coupon Code (optional)">
+            <div class="order-form-newsletter-signup">
+              <input type="checkbox" name="Newsletter" checked>
+              <label for="Newsletter">Sign up for our weekly newsletter for tips, challenges, and more</label>
+            </div>
 
             <p class="order-form-note">
-              We'll send you an invoice shortly after you sign up.<br>
-              If you provided a valid coupon code, we will deduct the discount on your invoice <strong>(there's no validation here so don't expect the price above to change)</strong>. :-)
+              <strong>We'll send you an invoice shortly after you sign up.</strong><br><br>
+              If you provided a valid coupon code, we will deduct the discount on your invoice.<br> <strong>(there's no validation here so the price above won't change even if your coupon is valid)</strong>. 😉
             </p>
 
             <button type="submit" id="formSubmit">Sign Up</button>
