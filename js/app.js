@@ -20,7 +20,7 @@ $( document ).ready( function() {
 
 
     $.ajax({
-      url: 'https://hooks.zapier.com/hooks/catch/1776164/sifwkw/',
+      url: 'https://hooks.zapier.com/hooks/catch/1776164/sgvxxf/',
       type: 'post',
       data: $( '#orderForm' ).serialize(),
       success: function() {

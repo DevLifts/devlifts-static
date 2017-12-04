@@ -1613,13 +1613,27 @@ hr {
             align-items: center;
     max-width: 1960px;
     margin: 5vh 6vw 10vh 6vw; }
+    .page-content .inner-container .page-heading {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     @media screen and (min-width: 1024px) {
       .page-content .inner-container {
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
         margin: 10vh auto;
         padding: 2vw; }
+        .page-content .inner-container .page-heading {
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
         .page-content .inner-container hr.align-left-desktop {
           text-align: left;
           margin-left: 0; } }
@@ -1769,6 +1783,16 @@ hr {
           .page-content .inner-container .order-container form.order-form input::placeholder {
             color: #C7C7C7;
             font-size: 0.950rem; }
+        .page-content .inner-container .order-container form.order-form .order-form-newsletter-signup {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 15px; }
+          .page-content .inner-container .order-container form.order-form .order-form-newsletter-signup input[type="checkbox"] {
+            width: auto;
+            margin: 5px; }
+          .page-content .inner-container .order-container form.order-form .order-form-newsletter-signup label {
+            margin: 5px; }
         .page-content .inner-container .order-container form.order-form .order-form-note {
           text-align: center;
           font-size: 0.875rem; }

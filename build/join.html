@@ -63,10 +63,12 @@
 
     <div class="page-content">
       <div class="inner-container">
-        <h3>Ready to join?</h3>
-        <hr class="align-left-desktop">
+        <div class="page-heading">
+          <h3>Ready to join?</h3>
+          <hr class="align-left-desktop">
 
-        <h2>We're happy to have you on board</h2>
+          <h2>We're happy to have you on board</h2>
+        </div>
 
         <div class="featured-image">
           <img src="images/dist/runner-large.jpg" alt="Runner">
@@ -87,30 +89,38 @@
               </h4>
 
               <p class="item-description">
-                Plus: Access to the DevLifts Slack Community, an initial 30 minute talk with the founders who will also do constant check ups on your progress.
+                Plus: An in-depth consultation questionnaire, access to our private Slack Community, and regular check-ins
               </p>
             </div>
 
             <div class="item-prices">
-              <div class="regular-price">$249</div>
-              <div class="discounted-price">$149</div>
+              <!-- <div class="regular-price">$249</div> -->
+              <div class="discounted-price">$249</div>
             </div>
           </div> <!-- .item-details -->
 
           <p class="order-total">
-            Your order total is <strong>$149</strong>
+            Your order total is <strong>$249</strong>
           </p>
           <hr>
 
           <form id="orderForm" class="order-form">
+            <p class="order-form-note">
+              <strong>Please read this:</strong> Due to the high volume of orders we've recently had, our estimated plan timeframe of delivering your plan is 1-2 weeks from when you complete your questionnaire. You should receive a questionnaire within a couple of days of ordering!
+            </p>
+
             <input type="text" name="First Name" placeholder="First Name*" required>
             <input type="text" name="Last Name" placeholder="Last Name*" required>
             <input type="email" name="Email" placeholder="Email*" required>
             <input type="text" name="Coupon" placeholder="Coupon Code (optional)">
+            <div class="order-form-newsletter-signup">
+              <input type="checkbox" name="Newsletter" checked>
+              <label for="Newsletter">Sign up for our weekly newsletter for tips, challenges, and more</label>
+            </div>
 
             <p class="order-form-note">
-              We'll send you an invoice shortly after you sign up.<br>
-              If you provided a valid coupon code, we will deduct the discount on your invoice <strong>(there's no validation here so don't expect the price above to change)</strong>. :-)
+              <strong>We'll send you an invoice shortly after you sign up.</strong><br><br>
+              If you provided a valid coupon code, we will deduct the discount on your invoice.<br> <strong>(there's no validation here so the price above won't change even if your coupon is valid)</strong>. 😉
             </p>
 
             <button type="submit" id="formSubmit">Sign Up</button>
@@ -130,6 +140,59 @@
             </div>
           </div>
         </div> <!-- .order-container -->
+
+        <section class="faq">
+          <div class="faq-content">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="question-group">
+              <p class="question">
+                I’m not interested in becoming a bodybuilder. Is DevLifts for me?
+              </p>
+              <p class="answer">
+                Yes! We will have plans suited for all sorts of goals and lifestyles. You set your goals. We're here to provide you with resources and motivation to achieve them.
+              </p>
+            </div> <!-- .question-group -->
+            
+            <div class="question-group">
+              <p class="question">
+                Are you qualified to be giving fitness advice?
+              </p>
+              <p class="answer">
+                Firstly, Thad is a certified personal trainer, and J.C. is currently an ACE personal training candidate. Thad will be making and signing off on the plans until J.C. finishes his certification.<br><br>
+                
+                Secondly, J.C. is a developer himself who has experienced firsthand some of the health problems brought on by the average developer lifestyle. Not only will this influence all the training and recommendations given by DevLifts, but it also means there’s a great deal of empathy he will be able to have for everyone.
+              </p>
+            </div> <!-- .question-group -->
+
+            <div class="question-group">
+              <p class="question">
+                How is DevLifts different from existing fitness sites?
+              </p>
+              <p class="answer">
+                Firstly, we're specialized. To our knowledge, DevLifts is the only developer-centric fitness community on the Internet. Everything we do revolves around helping you, the developer, achieve a healthier lifestyle. This means you benefit from a highly targeted approach and an encouraging, like-minded community to keep you going.<br><br>
+                
+                Secondly, no fluff. We're not here to waste your time or play games with you — we're here to help you feel better, look better, and live longer. And all our content and programming will be published to that end.
+              </p>
+            </div> <!-- .question-group -->
+
+            <div class="question-group">
+              <p class="question">
+                How is DevLifts different from hiring a personal trainer?
+              </p>
+              <p class="answer">
+                Only in the ways it needs to be.<br><br>
+                
+                <strong>Less expensive.</strong> Thad works as a traditional private trainer for his day job, and his lowest-paying client still racks up a $360/month bill.<br><br>
+                
+                <strong>No chaperones.</strong> We get that it can be uncomfortable having someone look over your shoulder and chit-chatting while you’re trying to work out. That’s another beauty of DevLifts: all the expertise of a certified personal trainer — without the trainer.<br><br>
+                
+                <strong>Community.</strong> Benefit from a community of like-minded developers who are on this journey with you. We haven’t met any personal trainers with membership forums or Slack channels.<br><br>
+              </p>
+            </div> <!-- .question-group -->
+
+          </div> <!-- .faq-content -->
+        </section> <!-- .faq -->
       </div> <!-- .inner-container -->
     </div> <!-- .page-content -->
 
