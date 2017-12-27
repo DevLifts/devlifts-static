@@ -1,0 +1,25 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primaryBlue;
+
+  .promo-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 960px;
+    padding: 5vh 6vw;
+    color: #fff;
+
+    p {
+      color: #fff;
+      text-align: center;
+    }
+
+    span {
+      color: $primaryGreen;
+      font-weight: 700;
+    }
+  }
+}
