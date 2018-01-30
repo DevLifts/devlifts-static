@@ -1794,6 +1794,13 @@ hr {
             font-weight: 600;
             color: #272727;
             padding: 10px; }
+      .page-content .inner-container .order-container .order-btn {
+        margin-top: 50px; }
+      .page-content .inner-container .order-container .order-form-note {
+        max-width: 600px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.875rem; }
       .page-content .inner-container .order-container .order-total strong {
         color: #1BBC9B; }
       .page-content .inner-container .order-container form.order-form {
