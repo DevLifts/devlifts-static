@@ -132,6 +132,17 @@
         }
       }
 
+      .order-btn {
+        margin-top: 50px;
+      }
+
+      .order-form-note {
+        max-width: 600px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.875rem;
+      }
+
       .order-total {
         strong {
           color: $primaryGreen;

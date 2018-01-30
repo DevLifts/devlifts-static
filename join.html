@@ -101,46 +101,12 @@
             </div>
           </div> <!-- .item-details -->
 
-          <p class="order-total">
-            Your order total is <strong>$199</strong>
-          </p>
-          <hr>
+            <a class="cta-btn order-btn" href="https://checkout.chec.io/devlifts-personalized-plan" data-chec-product-id="devlifts-personalized-plan">Join Now</a>
 
-          <form id="orderForm" class="order-form">
             <p class="order-form-note">
               <strong>Please read this:</strong> Due to the high volume of orders we've recently had, our estimated plan timeframe of delivering your plan is 1-2 weeks from when you complete your questionnaire. You should receive a questionnaire within a couple of days of ordering!
             </p>
-
-            <input type="text" name="First Name" placeholder="First Name*" required>
-            <input type="text" name="Last Name" placeholder="Last Name*" required>
-            <input type="email" name="Email" placeholder="Email*" required>
-            <input type="text" name="Coupon" placeholder="Coupon Code (optional)">
-            <div class="order-form-newsletter-signup">
-              <input type="checkbox" name="Newsletter" checked>
-              <label for="Newsletter">Sign up for our weekly newsletter for tips, challenges, and more</label>
-            </div>
-
-            <p class="order-form-note">
-              <strong>We'll send you an invoice shortly after you sign up.</strong><br><br>
-              If you provided a valid coupon code, we will deduct the discount on your invoice.<br> <strong>(there's no validation here so the price above won't change even if your coupon is valid)</strong>. 😉
-            </p>
-
-            <button type="submit" id="formSubmit">Sign Up</button>
-          </form>
           
-          <div class="loader"></div>
-          
-          <p class="error">
-            Whoa there! That submission didn't go through. Try again, and if this persists, please contact me via email or Twitter!
-          </p>
-
-          <div class="thank-you">
-            <h2>Thank you!</h2>
-            <p>You should be receiving an invoice very soon.</p>
-            <div class="cta-btn">
-              <a href="#">Do you have any questions?</a>
-            </div>
-          </div>
         </div> <!-- .order-container -->
 
         <section class="faq">
@@ -251,6 +217,8 @@
       </div> <!-- .footer-content -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://chec-cdn.s3.amazonaws.com/js/embed.js"></script>
+
     <script src="js/app.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
