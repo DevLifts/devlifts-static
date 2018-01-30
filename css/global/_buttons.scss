@@ -66,3 +66,22 @@
     }
   }
 }
+
+.order-btn {
+  border: 2px #1BBC9B solid;
+  background-color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 15px 50px;
+  color: #1BBC9B;
+  
+  &:hover {
+    background-color: $primaryGreen;
+    color: #fff;
+    cursor: pointer;
+
+    a:hover, a:focus {
+      color: $primaryGreen;
+    }
+  }
+}
