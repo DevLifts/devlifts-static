@@ -956,6 +956,20 @@ footer {
       .cta-btn.transparent:hover a:hover, .cta-btn.transparent:hover a:focus {
         color: #fff; }
 
+.order-btn {
+  border: 2px #1BBC9B solid;
+  background-color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 15px 50px;
+  color: #1BBC9B; }
+  .order-btn:hover {
+    background-color: #1BBC9B;
+    color: #fff;
+    cursor: pointer; }
+    .order-btn:hover a:hover, .order-btn:hover a:focus {
+      color: #1BBC9B; }
+
 hr {
   background-color: #1BBC9B;
   border: none;
