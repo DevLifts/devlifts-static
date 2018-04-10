@@ -1,11 +1,4 @@
 $( document ).ready( function() {
-
-  var href = window.location.href;
-  var url = new URL(href);
-
-  if (url.pathname === '/exercise/air-squat') {
-    window.location.replace('https://www.youtube.com/watch?v=k1_WoVtq2i0');
-  }
   
   // Mobile Menu Icon Handler
   $( '.menu-icon' ).click( function(e) {
