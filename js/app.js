@@ -1,11 +1,4 @@
 $( document ).ready( function() {
-
-  var href = window.location.href;
-  var url = new URL(href);
-  
-  if (url.pathname === '/404.html') {
-    console.log('/test matched!');
-  }
   
   // Mobile Menu Icon Handler
   $( '.menu-icon' ).click( function(e) {
