@@ -22,7 +22,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 /* Image Optimization Add-Ons */
-var imagemin = require('gulp-imagemin');
+// var imagemin = require('gulp-imagemin');
 
 /* BrowserSync Stuff */
 var browserSync = require('browser-sync').create();
@@ -49,7 +49,6 @@ gulp.task('js', function() {
 gulp.task('images', function() {
   return gulp.src('./images/src/*')
     .pipe(plumber({errorHandler: onError}))
-    .pipe(imagemin({optimizationLevel: 7, progressive: true}))
     .pipe(gulp.dest('./images/dist'));
 });
 
