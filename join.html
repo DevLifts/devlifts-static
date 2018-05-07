@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="alternate" type="application/rss+xml" title="Refactor Your Body RSS" href="https://rss.simplecast.com/podcasts/3783/rss" />
+
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -98,12 +100,21 @@
             </div>
 
             <div class="item-prices">
-              <div class="regular-price">$249</div>
-              <div class="discounted-price">$199</div>
+              <div class="regular-price">$199</div>
+              <div class="discounted-price">$149</div>
             </div>
           </div> <!-- .item-details -->
 
-            <a class="cta-btn order-btn" href="https://checkout.chec.io/devlifts-personalized-plan" data-chec-product-id="devlifts-personalized-plan">Join Now</a>
+            <a 
+              class="cta-btn order-btn snipcart-add-item" 
+              href="#" 
+              data-item-id="1"
+              data-item-name="DevLifts Personalized Fitness Plan"
+              data-item-price="149.00"
+              data-item-url="https://devlifts.io/join.html"
+              data-item-taxable="false">
+              Join Now
+            </a>
 
             <p class="order-form-note">
               <strong>Please read this:</strong> Due to the high volume of orders we've recently had, our estimated plan timeframe of delivering your plan is 1-2 weeks from when you complete your questionnaire. You should receive a questionnaire within a couple of days of ordering!
@@ -219,7 +230,7 @@
       </div> <!-- .footer-content -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://chec-cdn.s3.amazonaws.com/js/embed.js"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="ZmZiMzgyMTItNDkwMy00YjY5LTk3ODEtYWQyMTExYWZlMjM1NjM2NTM0Nzg2ODI0ODI2Njkz" id="snipcart"></script>
 
     <script src="js/app.min.js"></script>
 
