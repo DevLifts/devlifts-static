@@ -1009,6 +1009,88 @@ hr {
       color: #1BBC9B;
       font-weight: 700; }
 
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .testimonials .testimonials-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1960px;
+    margin: 5vh 6vw 10vh 6vw; }
+    @media screen and (min-width: 768px) {
+      .testimonials .testimonials-content {
+        padding: 0 15vw; } }
+    .testimonials .testimonials-content .cta-btn {
+      margin-top: 55px; }
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 20px 0; }
+  .testimonial .quote {
+    text-align: center; }
+  .testimonial .quoted {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .testimonial .quoted .quoted-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
+      margin-bottom: 15px; }
+    .testimonial .quoted .quoted-name {
+      margin: 0;
+      padding: 0;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #272727;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .testimonial .quoted .quoted-position {
+      margin: 0;
+      padding: 0;
+      font-size: 0.5625rem;
+      color: #636363;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1161,45 +1243,6 @@ hr {
     @media screen and (min-width: 768px) {
       .why .why-content {
         padding: 0 15vw; } }
-    .why .why-content .testimonial {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .why .why-content .testimonial .quote {
-        text-align: center; }
-      .why .why-content .testimonial .quoted {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .why .why-content .testimonial .quoted .quoted-name {
-          margin: 0;
-          padding: 0;
-          font-size: 0.6875rem;
-          font-weight: 600;
-          color: #272727;
-          letter-spacing: 2px;
-          text-transform: uppercase; }
-        .why .why-content .testimonial .quoted .quoted-position {
-          margin: 0;
-          padding: 0;
-          font-size: 0.5625rem;
-          color: #636363;
-          letter-spacing: 2px;
-          text-transform: uppercase; }
     .why .why-content .cta-btn {
       margin-top: 55px; }
 

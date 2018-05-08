@@ -15,43 +15,9 @@
       padding: 0 15vw;
     }
 
-    .testimonial {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .quote {
-        text-align: center;
-      }
-
-      .quoted {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .quoted-name {
-          margin: 0;
-          padding: 0;
-          font-size: 0.6875rem;
-          font-weight: 600;
-          color: $black;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        }
-
-        .quoted-position {
-          margin: 0;
-          padding: 0;
-          font-size: 0.5625rem;
-          color: $grey;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        }
-      }
-    }
-
     .cta-btn {
       margin-top: 55px;
     }
   }
 }
+
