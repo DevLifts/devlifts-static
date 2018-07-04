@@ -247,3 +247,27 @@
     }
   }
 }
+
+.tracks {
+  overflow: hidden;
+  padding: 5vh 6vw;
+  
+  .tracks-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+  } 
+
+  .track {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+}
