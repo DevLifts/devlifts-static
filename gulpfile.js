@@ -29,39 +29,39 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
 gulp.task('sass', function() {
-  return gulp.src('./css/**/*.scss')
+  return gulp.src('./src/css/**/*.scss')
   .pipe(plumber({ errorHandler: onError }))
   .pipe(sass())
   .pipe(autoprefixer())
-  .pipe(gulp.dest('./'))              // Output LTR stylesheets (style.css)
+  .pipe(gulp.dest('./src/'))              // Output LTR stylesheets (style.css)
 });
 
 gulp.task('js', function() {
-  return gulp.src(['./js/**/app.js'])
+  return gulp.src(['./src/js/**/app.js'])
   //  .pipe(jshint())
   //  .pipe(jshint.reporter('default'))
     .pipe(concat('app.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./src/js'))
 });
 
 gulp.task('images', function() {
-  return gulp.src('./images/src/*')
+  return gulp.src('./src/images/src/*')
     .pipe(plumber({errorHandler: onError}))
-    .pipe(gulp.dest('./images/dist'));
+    .pipe(gulp.dest('./src/images/dist'));
 });
 
 gulp.task('watch', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./src/"
     }
   });
-  gulp.watch('./css/**/*.scss', ['sass', reload]);
-  gulp.watch('./js/**/*.js', ['js', reload]);
+  gulp.watch('./src/css/**/*.scss', ['sass', reload]);
+  gulp.watch('./src/js/**/*.js', ['js', reload]);
   gulp.watch('images/src/*', ['images', reload]);
-  gulp.watch('./**/*.html', reload);
+  gulp.watch('./src/**/*.html', reload);
 });
 
 gulp.task('default', ['sass', 'js', 'images', 'watch']);
