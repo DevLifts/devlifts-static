@@ -60,7 +60,7 @@ gulp.task('watch', function() {
   });
   gulp.watch('./src/css/**/*.scss', ['sass', reload]);
   gulp.watch('./src/js/**/*.js', ['js', reload]);
-  gulp.watch('images/src/*', ['images', reload]);
+  gulp.watch('./src/images/src/*', ['images', reload]);
   gulp.watch('./src/**/*.html', reload);
 });
 
