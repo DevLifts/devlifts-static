@@ -8,3 +8,5 @@
 *.dev.env
 /server/stripe.js
 /build/server/stripe.js
+yarn.lock
+*.log
