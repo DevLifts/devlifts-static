@@ -83,6 +83,7 @@ gulp.task('compile', function(done) {
       throw err
     }
 
+    gulp.src('./.well-known/**').pipe(gulp.dest('./build/.well-known'))
     gulp.src('./images/dist/**').pipe(gulp.dest('./build/images/dist'))
     gulp.src('./css/vendor/**').pipe(gulp.dest('./build/css/vendor'))
 
@@ -90,7 +91,6 @@ gulp.task('compile', function(done) {
       .src([
         './*',
         './**/*',
-        './.well-known',
         '!./build',
         '!./build/**/*',
         '!./images/**/*',
