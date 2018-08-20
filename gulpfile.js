@@ -90,7 +90,7 @@ gulp.task('compile', function(done) {
       .src([
         './*',
         './**/*',
-        './well-known/**',
+        './.well-known',
         '!./build',
         '!./build/**/*',
         '!./images/**/*',
