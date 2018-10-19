@@ -5,14 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clearBuild": "rm -rf build/ && mkdir build && mkdir build/images && mkdir build/images/dist && mkdir build/fonts && mkdir build/js && mkdir build/css && mkdir build/css/vendor",
-    "copyAssets": "cp -R images/dist/ build/images/dist && cp -R fonts/ build/fonts && cp -R js/ build/js && cp -R css/vendor/ build/css/vendor",
-    "copyFiles": "cp *.html build/ && cp style.css build/ && cp *.json build/",
-    "copyOther": "cp -R .well-known/ build/.well-known",
-    "build": "gulp sass && gulp js && gulp images && npm run clearBuild && npm run copyAssets && npm run copyFiles && npm run copyOther",
-    "buildLite": "npm run clearBuild && npm run copyAssets && npm run copyFiles && npm run copyOther",
-    "deploy": "npm run build && cd build && now && now alias",
-    "deployLite": "npm run buildLite && cd build && now && now alias"
+    "build": "gulp sass && gulp js && rsync -avc --delete src/ build/",
+    "deploy": "npm run build && cd build && now && now alias"
   },
   "author": "",
   "license": "ISC",
