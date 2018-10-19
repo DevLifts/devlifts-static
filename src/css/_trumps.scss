@@ -15,7 +15,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
 }
 
 // Snipcart override for Issue #3
-#snipcart-next {
+#snipcart-next, #snipcart-paymentmethod-pay {
   margin-bottom: 40px;
 } 
 @include breakpoint(tablet) {

@@ -2237,7 +2237,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
 .u-show {
   display: block; }
 
-#snipcart-next {
+#snipcart-next, #snipcart-paymentmethod-pay {
   margin-bottom: 40px; }
 
 @media screen and (min-width: 768px) {
