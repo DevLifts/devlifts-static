@@ -13,3 +13,13 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
 .u-show {
   display: block;
 }
+
+// Snipcart override for Issue #3
+#snipcart-next {
+  margin-bottom: 40px;
+} 
+@include breakpoint(tablet) {
+  #snipcart-next {
+    margin-bottom: 0px;
+  }  
+}
