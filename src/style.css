@@ -2236,3 +2236,10 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
 
 .u-show {
   display: block; }
+
+#snipcart-next {
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 768px) {
+  #snipcart-next {
+    margin-bottom: 0px; } }
