@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="../style.css">
 
   <link rel="alternate" type="application/rss+xml" title="Refactor Your Body RSS" href="https://rss.simplecast.com/podcasts/3783/rss" />
+
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/vendor/snipcart/snipcart.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -215,8 +219,10 @@
             <strong>$99</strong>
           </p>
 
-          <button class="order-btn" id="checkout-button">Join the Community</button>
-          <div id="error-message"></div>
+          <button class="order-btn snipcart-add-item" data-item-name="DevLifts Premium - 8 Weeks" data-item-id="DevLiftsPremium8"
+            data-item-url="https://devlifts.io/join/rfb2018.html" data-item-price="99.00">
+            Join the Community
+          </button>
         </div>
         <!-- .order-container -->
 
@@ -454,10 +460,26 @@
     <!-- .footer-content -->
   </footer>
 
-  <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
+  <div class="snipcart-summary">
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="NzM0ZmI5OGMtN2U0Ni00NjRhLWE4NjItZjMzZWZkMTdmY2U5NjM2NTM0Nzg2ODI0ODI2Njkz"
+    id="snipcart"></script>
+
+  <!-- Snipcart card configuration -->
+  <script>
+    if (Snipcart !== (undefined || null) &&
+      Snipcart.api !== (undefined || null) &&
+      Snipcart.api.configure !== (undefined || null)) {
+      Snipcart.api.configure('credit_cards', [
+        { 'type': 'visa', 'display': 'Visa' },
+        { 'type': 'mastercard', 'display': 'Mastercard' },
+        { 'type': 'amex', 'display': 'American Express' },
+        { 'type': 'discover', 'display': 'Discover' }
+      ]);
+    }
+  </script>
 
   <script src="../js/app.min.js"></script>
 
@@ -478,30 +500,19 @@
     gtag('config', 'UA-98117680-1');
   </script>
 
-<script>
-  var stripe = Stripe('pk_live_FqSWPFIVfvcCM8cX5pZN4wBb', {
-    betas: ['checkout_beta_3']
-  });
-
-  var checkoutButton = document.getElementById('checkout-button');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_E1E1l6KYfpzhm8', quantity: 1}],
-      successUrl: 'devlifts.io/success',
-      cancelUrl: 'devlifts.io/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-</script>
+  <!-- Twitter universal website tag code -->
+  <script>
+    !function (e, t, n, s, u, a) {
+      e.twq || (s = e.twq = function () {
+        s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+      }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+        a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+    }(window, document, 'script');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init', 'nza9f');
+    twq('track', 'PageView');
+  </script>
+  <!-- End Twitter universal website tag code -->
 
 </body>
 
