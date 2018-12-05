@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DevLifts | Refactor Your Body</title>
-
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Manage Account | DevLifts</title>
+    <link rel="stylesheet" href="../style.css" />
 
     <link
       rel="alternate"
       type="application/rss+xml"
       title="Refactor Your Body RSS"
       href="https://rss.simplecast.com/podcasts/3783/rss"
+    />
+
+    <link
+      href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../css/vendor/snipcart/snipcart.css"
+      rel="stylesheet"
+      type="text/css"
     />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,20 +38,32 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#1bbc9b">
 
+    <script>
+      (function() {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://app.termly.io/embed.min.js";
+        s.id = "593edd2e-c193-4e9b-bf75-a125327dca3c";
+        s.setAttribute("data-name", "termly-embed-banner");
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+    </script>
   </head>
 
   <body>
-    <header class="header-primary">
+    <header class="header-secondary">
       <div class="header-content">
         <div class="logo">
           <a href="/">
             <img
-              src="images/dist/logo.png"
+              src="../images/dist/logo.png"
               class="logo-white"
               alt="DevLifts Logo"
             />
             <img
-              src="images/dist/logo-black.png"
+              src="../images/dist/logo-black.png"
               class="logo-black"
               alt="DevLifts Logo"
             />
@@ -53,17 +75,16 @@
         <div class="nav-container">
           <nav>
             <ul>
-              <li><a class="active" href="/">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <!-- <li><a href="#">Articles</a></li> -->
+              <li><a href="/">Home</a></li>
+              <li><a href="../about.html">About</a></li>
               <li>
-
+                <a href="https://intercom.help/devlifts" target="_blank">FAQ</a>
               </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="../contact.html">Contact</a></li>
             </ul>
 
             <div class="cta-btn white">
-              <a href="join.html">Join the Community</a>
+              <a href="../join.html">Join the Community</a>
             </div>
           </nav>
         </div>
@@ -72,41 +93,46 @@
         <div class="desktop-nav">
           <nav>
             <ul>
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <!-- <li><a href="#">Articles</a></li> -->
+              <li><a href="/">Home</a></li>
+              <li><a href="../about.html">About</a></li>
               <li>
-
+                <a href="https://intercom.help/devlifts" target="_blank">FAQ</a>
               </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="../contact.html">Contact</a></li>
             </ul>
 
-            <div class="cta-btn white">
-              <a href="join.html">Join the Community</a>
+            <div class="cta-btn">
+              <a href="../join.html">Join the Community</a>
             </div>
           </nav>
         </div>
       </div>
       <!-- .header-content -->
     </header>
-    <div class="hero">
-      <div class="hero-content">
-        <h1 class="title">Whoa there!</h1>
-        <hr />
 
-        <p class="intro">That page doesn't exist.</p>
+    <div class="page-content">
+      <div class="inner-container">
+        <div class="page-heading"><h2>Manage your account</h2></div>
+        <div class="snipcart-summary"></div>
 
-        <div class="cta-btn white">
-          <a href="join.html">Join the Community</a>
-        </div>
-
-        <div class="scroll-down">
-          <img src="images/dist/down-arrow.png" alt="Scroll Down Icon" />
-        </div>
+        <button
+          style="align-self: flex-start;"
+          href="#"
+          class="order-btn snipcart-user-profile"
+        >
+          View Account
+        </button>
+        <button
+          style="align-self: flex-start; margin-top: 20px;"
+          href="#"
+          class="order-btn snipcart-edit-profile"
+        >
+          Manage Account
+        </button>
       </div>
-      <!-- .hero-content -->
+      <!-- .inner-container -->
     </div>
-    <!-- .hero -->
+    <!-- .page-content -->
 
     <footer>
       <div class="footer-content">
@@ -125,6 +151,18 @@
         <hr />
 
         <div class="footer-navigation">
+          <div class="links-group">
+            <h5>Links</h5>
+
+            <nav>
+              <a href="../index.html">Home</a>
+              <a href="../about.html">About</a>
+              <a href="#" class="snipcart-user-profile">Manage Account</a>
+              <a href="https://intercom.help/devlifts" target="_blank">FAQ</a>
+              <a href="../contact.html">Contact</a>
+            </nav>
+          </div>
+
           <div class="links-group">
             <h5>Legal Stuff</h5>
             <nav>
@@ -181,7 +219,13 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/app.min.js"></script>
+    <script
+      src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
+      data-api-key="NzM0ZmI5OGMtN2U0Ni00NjRhLWE4NjItZjMzZWZkMTdmY2U5NjM2NTM0Nzg2ODI0ODI2Njkz"
+      id="snipcart"
+    ></script>
+
+    <script src="../js/app.min.js"></script>
 
     <script>
       window.intercomSettings = {

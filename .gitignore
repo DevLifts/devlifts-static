@@ -1,5 +1,5 @@
 /node_modules/
-/build/
+build/*
 /build/style.css
 /build/index.html
 /build/package.json

@@ -26,38 +26,32 @@ var uglify = require('gulp-uglify')
 // var imagemin = require('gulp-imagemin');
 
 /* BrowserSync Stuff */
-var browserSync = require('browser-sync').create()
-var reload = browserSync.reload
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
 
-gulp.task('sass', function(done) {
-  gulp
-    .src('./css/**/*.scss')
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('./'))
+gulp.task('sass', function() {
+  return gulp.src('./src/css/**/*.scss')
+  .pipe(plumber({ errorHandler: onError }))
+  .pipe(sass())
+  .pipe(autoprefixer())
+  .pipe(gulp.dest('./src/'))              // Output LTR stylesheets (style.css)
+});
 
-  done()
-})
-
-gulp.task('js', function(done) {
-  gulp
-    .src(['./js/**/app.js'])
-    //  .pipe(jshint())
-    //  .pipe(jshint.reporter('default'))
+gulp.task('js', function() {
+  return gulp.src(['./src/js/**/app.js'])
+  //  .pipe(jshint())
+  //  .pipe(jshint.reporter('default'))
     .pipe(concat('app.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./src/js'))
+});
 
-  done()
-})
-
-gulp.task('images', function(done) {
-  gulp
-    .src('./images/src/*')
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(gulp.dest('./images/dist/'))
+gulp.task('images', function() {
+  return gulp.src('./src/images/src/*')
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(gulp.dest('./src/images/dist'));
+});
 
   done()
 })
@@ -65,49 +59,13 @@ gulp.task('images', function(done) {
 gulp.task('watch', function(done) {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: "./src/"
     }
-  })
+  });
+  gulp.watch('./src/css/**/*.scss', ['sass', reload]);
+  gulp.watch('./src/js/**/*.js', ['js', reload]);
+  gulp.watch('./src/images/src/*', ['images', reload]);
+  gulp.watch('./src/**/*.html', reload);
+});
 
-  gulp.watch('./css/**/*.scss', gulp.parallel(['sass', reload]))
-  gulp.watch('./js/**/*.js', gulp.parallel(['js', reload]))
-  gulp.watch('images/src/*', gulp.parallel(['images', reload]))
-  gulp.watch('./*.html', reload)
-
-  done()
-})
-
-gulp.task('compile', function(done) {
-  rimraf('./build/**', err => {
-    if (err) {
-      throw err
-    }
-
-    gulp.src('./.well-known/**').pipe(gulp.dest('./build/.well-known'))
-    gulp.src('./images/dist/**').pipe(gulp.dest('./build/images/dist'))
-    gulp.src('./css/vendor/**').pipe(gulp.dest('./build/css/vendor'))
-
-    gulp
-      .src([
-        './*',
-        './**/*',
-        '!./build',
-        '!./build/**/*',
-        '!./images/**/*',
-        '!./css/**/*',
-        '!./node_modules',
-        '!./node_modules/**/*',
-        '!.gitignore',
-        '!gulpfile.js',
-        '!yarn*',
-        '!README*'
-      ])
-      .pipe(plumber({ errorHandler: onError }))
-      .pipe(gulp.dest('./build'))
-
-    done()
-  })
-})
-
-gulp.task('build', gulp.parallel('sass', 'js', 'images', 'compile'))
-gulp.task('default', gulp.parallel('sass', 'js', 'images', 'watch'))
+gulp.task('default', ['sass', 'js', 'images', 'watch']);
