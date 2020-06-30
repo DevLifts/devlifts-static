@@ -1436,7 +1436,7 @@ hr {
             -ms-flex-direction: row;
                 flex-direction: row; } }
     .pricing .pricing-content .benefits {
-      background-color: #FBFBFB;
+      background-color: #fbfbfb;
       padding: 5vh 3vw 10vh 3vw;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1453,10 +1453,9 @@ hr {
               align-items: center; }
       @media screen and (min-width: 1024px) {
         .pricing .pricing-content .benefits {
-          width: 50vw;
           padding: 5vh 8vw 10vh; } }
       .pricing .pricing-content .benefits ul {
-        border: 1px #DBDBDB solid;
+        border: 1px #dbdbdb solid;
         padding: 20px 30px;
         list-style: none; }
         @media screen and (min-width: 1024px) {
@@ -1483,9 +1482,9 @@ hr {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
@@ -1523,7 +1522,7 @@ hr {
           font-size: 1.25rem;
           color: rgba(255, 255, 255, 0.4); }
           .pricing .pricing-content .price .prices .regular-price:after {
-            content: '';
+            content: "";
             background-color: #fff;
             width: 100%;
             height: 2px;

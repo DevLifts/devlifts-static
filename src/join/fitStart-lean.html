@@ -58,14 +58,14 @@
     <meta name="theme-color" content="#1bbc9b" />
 
     <script>
-      (function() {
-        var s = document.createElement("script");
+      (function () {
+        const s = document.createElement("script");
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://app.termly.io/embed.min.js";
         s.id = "593edd2e-c193-4e9b-bf75-a125327dca3c";
         s.setAttribute("data-name", "termly-embed-banner");
-        var x = document.getElementsByTagName("script")[0];
+        const x = document.getElementsByTagName("script")[0];
         x.parentNode.insertBefore(s, x);
       })();
     </script>
@@ -148,7 +148,7 @@
         <section class="pricing">
           <div class="pricing-content">
             <div class="benefits">
-              <h2>fit.start(lean)</h2>
+              <h2>fit.Start(lean)</h2>
 
               <p>
                 With a pure focus on helping beginners with fat loss,
@@ -175,18 +175,6 @@
               </ul>
             </div>
             <!-- .benefits -->
-
-            <div class="price">
-              <div class="prices"><p class="discounted-price">$19/mo</p></div>
-
-              <p class="bulk-discounts">
-                Do you offer <strong>group/bulk discounts?</strong> <br />
-                <a href="mailto:jc@devlifts.io"
-                  >Sure do. Email us for more info!</a
-                >
-              </p>
-            </div>
-            <!-- .price -->
           </div>
           <!-- .pricing-content -->
         </section>
@@ -212,20 +200,19 @@
             </div>
 
             <div class="item-prices">
-              <!-- <div class="regular-price">$199</div> -->
-              <div class="discounted-price">$19/mo</div>
+              <div class="discounted-price">FREE</div>
             </div>
           </div>
           <!-- .item-details -->
 
-          <p class="order-total">Your order total is <strong>$19</strong></p>
+          <p class="order-total">Your order total is <strong>free</strong></p>
 
           <button
             class="order-btn snipcart-add-item"
             data-item-name="fit.Start(lean)"
             data-item-id="fitStart-lean"
             data-item-url="https://devlifts.io/join/fitStart-lean.html"
-            data-item-price="19.00"
+            data-item-price="0.00"
             data-item-payment-interval="Month"
             data-item-payment-interval-count="1"
           >
@@ -415,12 +402,6 @@
           <div class="links-group">
             <h5>Contact</h5>
             <nav>
-              <a class="contact-link" href="mailto:jc@devlifts.io"
-                >jc@devlifts.io</a
-              >
-              <a class="contact-link" href="mailto:thad@devlifts.io"
-                >thad@devlifts.io</a
-              >
               <a class="contact-link" href="https://twitter.com/devlifts"
                 >Twitter: @DevLifts</a
               >
@@ -474,7 +455,7 @@
           { type: "mastercard", display: "Mastercard" },
           { type: "amex", display: "American Express" },
           { type: "discover", display: "Discover" },
-          { type: "maestro", display: "Maestro" }
+          { type: "maestro", display: "Maestro" },
         ]);
       }
     </script>

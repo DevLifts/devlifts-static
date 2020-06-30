@@ -5,13 +5,13 @@
   .pricing-content {
     display: flex;
     flex-direction: column;
-    
+
     @include breakpoint(desktop) {
       flex-direction: row;
     }
-    
+
     .benefits {
-      background-color: #FBFBFB;
+      background-color: #fbfbfb;
       padding: 5vh 3vw 10vh 3vw;
       display: flex;
       flex-direction: column;
@@ -19,12 +19,11 @@
       align-items: center;
 
       @include breakpoint(desktop) {
-        width: 50vw;
         padding: 5vh 8vw 10vh;
       }
 
       ul {
-        border: 1px #DBDBDB solid;
+        border: 1px #dbdbdb solid;
         padding: 20px 30px;
         list-style: none;
 
@@ -34,7 +33,7 @@
 
         li {
           padding: 20px 0;
-          color: #636363; 
+          color: #636363;
           text-indent: -1.2rem;
 
           &:before {
@@ -55,7 +54,7 @@
       padding: 5vh 3vw 10vh 3vw;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
       @include breakpoint(desktop) {
@@ -80,22 +79,22 @@
       .prices {
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         width: 50vw;
 
         @include breakpoint(tablet) {
           width: 25vw;
         }
-        
+
         .regular-price {
           margin: 0;
           margin-right: 25px;
           position: relative;
           font-size: 1.25rem;
-          color: rgba(255, 255, 255, .4);
+          color: rgba(255, 255, 255, 0.4);
 
           &:after {
-            content: '';
+            content: "";
             background-color: #fff;
             width: 100%;
             height: 2px;
