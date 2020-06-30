@@ -24,14 +24,14 @@
   <meta name="theme-color" content="#1bbc9b">
 
   <script>
-    (function () {
-      var s = document.createElement('script');
+    (function() {
+      const s = document.createElement('script');
       s.type = 'text/javascript';
       s.async = true;
       s.src = 'https://app.termly.io/embed.min.js';
       s.id = '593edd2e-c193-4e9b-bf75-a125327dca3c';
-      s.setAttribute("data-name", "termly-embed-banner");
-      var x = document.getElementsByTagName('script')[0];
+      s.setAttribute('data-name', 'termly-embed-banner');
+      const x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
     })();
   </script>
@@ -128,21 +128,6 @@
     <!-- .hero-content -->
   </div>
   <!-- .hero -->
-
-  <!-- promo block -->
-  <div class="promo">
-    <div class="promo-inner">
-      <h2>BACK FOR A LIMITED TIME: 8-Week Plans</h2>
-
-      <p>
-        Looking to get in shape for the new year? Our 8-week personalized training and nutrition plans are back thru January.
-      </p>
-
-      <div class="cta-btn white">
-        <a href="join/rfb2018">View 8-Week Plans</a>
-      </div>
-    </div>
-  </div>
 
   <div class="testimonials">
     <div class="testimonials-content">
@@ -461,8 +446,6 @@
         <div class="links-group">
           <h5>Contact</h5>
           <nav>
-            <a class="contact-link" href="mailto:jc@devlifts.io">jc@devlifts.io</a>
-            <a class="contact-link" href="mailto:thad@devlifts.io">thad@devlifts.io</a>
             <a class="contact-link" href="https://twitter.com/devlifts">Twitter: @DevLifts</a>
             <a class="contact-link" href="https://instagram.com/devlifts">Instagram: @DevLifts</a>
           </nav>
@@ -490,7 +473,9 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98117680-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {
+  dataLayer.push(arguments);
+}
     gtag('js', new Date());
 
     gtag('config', 'UA-98117680-1');

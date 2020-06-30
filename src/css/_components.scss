@@ -7,28 +7,27 @@ We shouldn't find any selectors with a lower specificity than one class in this 
 */
 
 // Import global components
-@import 'global/header';
-@import 'global/footer';
-@import 'global/buttons';
-@import 'global/small-ui-components';
-@import 'global/promo';
-@import 'global/testimonials';
+@import "global/header";
+@import "global/footer";
+@import "global/buttons";
+@import "global/small-ui-components";
+@import "global/testimonials";
 
 // Import home components
-@import 'pages/home/hero';
-@import 'pages/home/maitre';
-@import 'pages/home/why';
-@import 'pages/home/fight-back';
-@import 'pages/home/join';
-@import 'pages/home/pricing';
-@import 'pages/home/refund-guarantee';
-@import 'pages/home/faq';
+@import "pages/home/hero";
+@import "pages/home/maitre";
+@import "pages/home/why";
+@import "pages/home/fight-back";
+@import "pages/home/join";
+@import "pages/home/pricing";
+@import "pages/home/refund-guarantee";
+@import "pages/home/faq";
 
 // Import join components
-@import 'pages/join';
+@import "pages/join";
 
 // Import about components
-@import 'pages/about';
+@import "pages/about";
 
 // Import contact components
-@import 'pages/contact';
+@import "pages/contact";

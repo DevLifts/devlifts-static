@@ -976,39 +976,6 @@ hr {
   width: 40px;
   padding: 1px; }
 
-.promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #34495E; }
-  .promo .promo-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 960px;
-    padding: 5vh 6vw;
-    color: #fff; }
-    .promo .promo-inner p {
-      color: #fff;
-      text-align: center; }
-    .promo .promo-inner span {
-      color: #1BBC9B;
-      font-weight: 700; }
-
 .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1469,7 +1436,7 @@ hr {
             -ms-flex-direction: row;
                 flex-direction: row; } }
     .pricing .pricing-content .benefits {
-      background-color: #FBFBFB;
+      background-color: #fbfbfb;
       padding: 5vh 3vw 10vh 3vw;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1486,10 +1453,9 @@ hr {
               align-items: center; }
       @media screen and (min-width: 1024px) {
         .pricing .pricing-content .benefits {
-          width: 50vw;
           padding: 5vh 8vw 10vh; } }
       .pricing .pricing-content .benefits ul {
-        border: 1px #DBDBDB solid;
+        border: 1px #dbdbdb solid;
         padding: 20px 30px;
         list-style: none; }
         @media screen and (min-width: 1024px) {
@@ -1516,9 +1482,9 @@ hr {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
@@ -1556,7 +1522,7 @@ hr {
           font-size: 1.25rem;
           color: rgba(255, 255, 255, 0.4); }
           .pricing .pricing-content .price .prices .regular-price:after {
-            content: '';
+            content: "";
             background-color: #fff;
             width: 100%;
             height: 2px;
@@ -1873,7 +1839,7 @@ hr {
           .page-content .inner-container .order-container form.order-form input::-webkit-input-placeholder {
             color: #C7C7C7;
             font-size: 0.950rem; }
-          .page-content .inner-container .order-container form.order-form input:-ms-input-placeholder {
+          .page-content .inner-container .order-container form.order-form input::-moz-placeholder {
             color: #C7C7C7;
             font-size: 0.950rem; }
           .page-content .inner-container .order-container form.order-form input::-ms-input-placeholder {
@@ -2153,7 +2119,7 @@ hr {
     margin-bottom: 15px; }
     .page-content .contact-form-container input::-webkit-input-placeholder {
       color: #C7C7C7; }
-    .page-content .contact-form-container input:-ms-input-placeholder {
+    .page-content .contact-form-container input::-moz-placeholder {
       color: #C7C7C7; }
     .page-content .contact-form-container input::-ms-input-placeholder {
       color: #C7C7C7; }
@@ -2166,7 +2132,7 @@ hr {
     min-height: 200px; }
     .page-content .contact-form-container textarea::-webkit-input-placeholder {
       color: #C7C7C7; }
-    .page-content .contact-form-container textarea:-ms-input-placeholder {
+    .page-content .contact-form-container textarea::-moz-placeholder {
       color: #C7C7C7; }
     .page-content .contact-form-container textarea::-ms-input-placeholder {
       color: #C7C7C7; }
