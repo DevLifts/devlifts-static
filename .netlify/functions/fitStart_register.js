@@ -28,20 +28,24 @@ exports.handler = async (event, context, callback) => {
     }
   }
 
-  await fetch(ZAPIER_ENDPOINT, {
-    method: "POST",
-    body: parsedBody,
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(() => {
-    console.log("SUCCESS")
-    return { statusCode: 200 }
-  }).catch(err => {
+  try {
+    console.log('attempting to reach zapier...');
+    let response = await fetch(ZAPIER_ENDPOINT, {
+      method: "POST",
+      body: parsedBody,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    console.log("SUCCESS", response)
+  } catch (err) {
     return { 
       statusCode: err.statusCode || 500,
       body: "Error sending data to Zapier. Please try again."
     }
-  });
+  }
+
+  return {
+    statusCode: 200
+  }
 }
