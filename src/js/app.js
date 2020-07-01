@@ -20,7 +20,7 @@ $( document ).ready( function() {
 
 
     $.ajax({
-      url: '/.netlify/functions/fitStart_register',
+      url: 'https://hooks.zapier.com/hooks/catch/1776164/o80fkvy',
       type: 'post',
       data: $( '#orderForm' ).serialize(),
       success: function() {
