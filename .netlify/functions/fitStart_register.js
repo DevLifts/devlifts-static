@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 const ZAPIER_ENDPOINT = "https://hooks.zapier.com/hooks/catch/1776164/o80fkvy";
 
-exports.handler = async (event, context, callback) => {
+exports.handler = (event, context, callback) => {
   const { body } = event;
   
   if (!body) {
@@ -20,23 +20,22 @@ exports.handler = async (event, context, callback) => {
     return;
   }
 
-  let response;
-  try {
-    response = await fetch(ZAPIER_ENDPOINT, {
+
+
+ fetch(ZAPIER_ENDPOINT, {
       method: "POST",
       body,
       headers: {
         'Content-Type': 'application/json'
       }
     })
-    // handle response
-  } catch (err) {
-    callback(new Error("Error sending data to Zapier. Please try again."), {
-      statusCode: err.statusCode || 500,
+    .then(() => {
+      callback(null, {
+        statusCode: 200
+      });
+    }).catch(err => {
+      callback(new Error("Error sending data to Zapier. Please try again."), {
+        statusCode: err.statusCode || 500,
+      });
     });
-  }
-
-  callback(null, {
-    statusCode: 200
-  });
 }
