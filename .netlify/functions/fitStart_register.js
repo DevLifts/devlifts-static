@@ -38,9 +38,6 @@ exports.handler = async (event, context, callback) => {
       }
     });
     await response.json();
-    return {
-      statusCode: 200
-    }
   } catch (err) {
     return { 
       statusCode: err.statusCode || 500,
