@@ -8,3 +8,4 @@ build/*
 *.dev.env
 /server/stripe.js
 /build/server/stripe.js
+/.netlify/functions/node_modules/
