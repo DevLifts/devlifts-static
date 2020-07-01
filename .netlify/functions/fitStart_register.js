@@ -31,8 +31,8 @@ exports.handler = async (event, context, callback) => {
   try {
     console.log('attempting to reach zapier...');
     let response = await fetch(ZAPIER_ENDPOINT, {
-      method: "POST",
-      body,
+      method: "post",
+      body: event.body,
       headers: {
         'Content-Type': 'application/json'
       }
