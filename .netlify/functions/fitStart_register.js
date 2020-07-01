@@ -5,6 +5,7 @@ const ZAPIER_ENDPOINT = "https://hooks.zapier.com/hooks/catch/1776164/o80fkvy";
 
 exports.handler = async (event, context, callback) => {
   const parsedBody = queryString.parse(event.body);
+  console.log(parsedBody);
   
   if (!parsedBody) {
     callback(new Error("Missing required fields."), { statusCode: 400 })
