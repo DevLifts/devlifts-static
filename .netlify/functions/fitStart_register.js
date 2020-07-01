@@ -4,6 +4,8 @@ const ZAPIER_ENDPOINT = "https://hooks.zapier.com/hooks/catch/1776164/o80fkvy";
 
 exports.handler = (event, context, callback) => {
   const { body } = event;
+
+  console.log('##### BODY ####', body)
   
   if (!body) {
     callback(new Error("Missing required fields."), { statusCode: 400 })
