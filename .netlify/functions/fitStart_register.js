@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 const ZAPIER_ENDPOINT = "https://hooks.zapier.com/hooks/catch/1776164/o80fkvy";
 
-exports.handler = async function(event, context, callback) {
+exports.handler = async (event, context, callback) => {
   const { body } = event;
   
   if (!body) {
