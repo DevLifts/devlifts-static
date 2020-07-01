@@ -28,7 +28,7 @@ exports.handler = async (event, context, callback) => {
     }
   }
 
-  fetch(ZAPIER_ENDPOINT, {
+  await fetch(ZAPIER_ENDPOINT, {
     method: "POST",
     body: parsedBody,
     headers: {
@@ -36,6 +36,7 @@ exports.handler = async (event, context, callback) => {
     }
   })
   .then(() => {
+    console.log("SUCCESS")
     return { statusCode: 200 }
   }).catch(err => {
     return { 
