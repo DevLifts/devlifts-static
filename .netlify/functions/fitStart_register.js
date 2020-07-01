@@ -8,18 +8,24 @@ exports.handler = async (event, context, callback) => {
   console.log(parsedBody);
   
   if (!parsedBody) {
-    callback(new Error("Missing required fields."), { statusCode: 400 })
-    return;
+    return { 
+      statusCode: 400,
+      body: "Missing required fields." 
+    }
   }
 
   if (!parsedBody.Email) {
-    callback(new Error("Missing email address."), { statusCode: 400 })
-    return;
+    return { 
+      statusCode: 400,
+      body: "Missing email address."
+    }
   }
 
   if ( parsedBody.Product !== "fit.Start(lean)" && parsedBody.Product !== "fit.Start(bodyweight)" && parsedBody.Product !== "fit.Start(strong)") {
-    callback(new Error("Bad bot."), { statusCode: 400 })
-    return;
+    return { 
+      statusCode: 400,
+      body: "Bad bot."
+    }
   }
 
   fetch(ZAPIER_ENDPOINT, {
@@ -30,12 +36,11 @@ exports.handler = async (event, context, callback) => {
     }
   })
   .then(() => {
-    callback(null, {
-      statusCode: 200
-    });
+    return { statusCode: 200 }
   }).catch(err => {
-    callback(new Error("Error sending data to Zapier. Please try again."), {
+    return { 
       statusCode: err.statusCode || 500,
-    });
+      body: "Error sending data to Zapier. Please try again."
+    }
   });
 }
