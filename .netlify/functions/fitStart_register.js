@@ -1,5 +1,5 @@
 exports.handler = async (event, context, callback) => {
-  console.log('### BODY', body)
+  console.log('### BODY', event.body)
   callback(null, {
     statusCode: 200
   });
