@@ -17,7 +17,7 @@ exports.handler = async (event, context, callback) => {
     return;
   }
 
-  if ( parsedBody.Product !== "fit.Start(lean)" || parsedBody.Product !== "fit.Start(bodyweight)" || parsedBody.Product !== "fit.Start(strong)") {
+  if ( parsedBody.Product !== "fit.Start(lean)" && parsedBody.Product !== "fit.Start(bodyweight)" && parsedBody.Product !== "fit.Start(strong)") {
     callback(new Error("Bad bot."), { statusCode: 400 })
     return;
   }
