@@ -22,7 +22,7 @@ exports.handler = function(event, context, callback) {
 
   let response;
   try {
-    response = await fetch(API_ENDPOINT, {
+    response = await fetch(ZAPIER_ENDPOINT, {
       method: "POST",
       body,
       headers: {
