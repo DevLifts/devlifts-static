@@ -1069,7 +1069,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("images/dist/running.jpg");
   background-repeat: no-repeat;
   background-position: right 25% top 15%;
